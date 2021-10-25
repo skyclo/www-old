@@ -1,4 +1,6 @@
-module.exports = {
+const colors = require('tailwindcss/colors')
+
+const tailwind_config = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -7,10 +9,16 @@ module.exports = {
       'serif': ['Georgia', 'Cambria', '"Times\\ New\\ Roman"', 'Times', 'serif'],
       'mono': ['Cascadia Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation\ Mono"', '"Courier\ New"', 'monospace']
     },
-    extend: {},
+    extend: {
+      colors: {
+        gray: colors.trueGray,
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
 }
+
+module.exports = tailwind_config
