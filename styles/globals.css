@@ -36,4 +36,9 @@
     * {
         @apply transition-all duration-300 ease-in-out delay-75;
     }
+
+    .hljs {
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
 }
