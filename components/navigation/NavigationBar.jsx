@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import NavigationBarLink from './NavigationBarLink'
 
 export default function NavigationBar() {
