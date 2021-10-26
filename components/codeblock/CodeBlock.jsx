@@ -1,20 +1,25 @@
 import CodeLine from './CodeLine'
+import Highlight from 'highlight.js'
+import 'highlight.js/styles/atom-one-dark.css'
 
 export default function CodeBlock () {
     let code = [
         'class Conor {',
         '\tconstructor() {',
-        '\t\tthis.name = \'Conor\';',
+        '\t\tthis.name = \'Conor\'',
         '\t}',
         '',
         '\tsayHelloWorld() {',
-        '\t\tconsole.log(\`Hello, World! My name is $\{this.name\}\`);',
-        '\t\treturn;','\t}',
+        '\t\tconsole.log(\`Hello, World! My name is $\{this.name\}\`)',
+        '\t\treturn',
+        '\t}',
         '}',
         '',
-        'let Me = new Conor();',
-        'Me.sayHelloWorld();'
+        'let Me = new Conor()',
+        'Me.sayHelloWorld()'
     ]
+    code = Highlight.highlightAuto(code.join('\n')).value.split('\n')
+    console.log(code)
     return (
         <div className="flex flex-col z-10 my-auto ml-auto w-max max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl">
             <div className="grid gird-flow-col grid-cols-3 w-full h-6 px-4 rounded-t-md">
@@ -28,7 +33,7 @@ export default function CodeBlock () {
             <div className="grid grid-flow-row bg-transparent space-y-0 mt-2 mb-4">
                 {
                     code.map((value, index, array) => {
-                        return <CodeLine line={index} code={value}/>
+                        return <CodeLine line={index} code={{__html: "<pre>" + value + "</pre>"}}/>
                     })
                 }
             </div>
