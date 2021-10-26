@@ -11,7 +11,11 @@ const tailwind_config = {
     },
     extend: {
       colors: {
-        gray: colors.trueGray,
+        gray: colors.coolGray,
+      },
+      zIndex: {
+        '-1': '-1',
+        '-10': '-10',
       },
     },
   },
@@ -21,4 +25,5 @@ const tailwind_config = {
   plugins: [],
 }
 
+tailwind_config.theme.extend.colors.gray[950] = '#050a15'
 module.exports = tailwind_config
