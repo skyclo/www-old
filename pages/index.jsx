@@ -4,7 +4,7 @@ import Hero from '../components/hero/Hero'
 
 export default function Home() {
     return (
-        <>
+        <html lang="en">
             <Head>
                 <title>Skyclo | Home</title>
             </Head>
@@ -12,6 +12,6 @@ export default function Home() {
                 <NavigationBar/>
                 <Hero/>
             </body>
-        </>
+        </html>
     )
 }
