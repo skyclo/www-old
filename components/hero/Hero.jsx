@@ -3,7 +3,7 @@ import CodeBlock from '../codeblock/CodeBlock'
 
 export default function Hero() {
     return (
-        <div className="flex row w-screen max-w-7xl mx-auto h-screen -mt-12">
+        <header className="flex row w-screen max-w-7xl mx-auto h-screen -mt-12">
             <div className="flex flex-col my-auto">
                 <h1
                     className="font-sans text-left text-6xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text">
@@ -29,9 +29,9 @@ export default function Hero() {
                 </div>
             </div>
             <div className="flex flex-row relative ml-auto my-auto">
-                <img src="/images/hero_glow1.png" className="absolute right-1/4 -top-1/2 opacity-30"/>
+                <img src="/images/hero_glow1.png" className="absolute right-1/4 -top-1/2 opacity-30" alt=""/>
                 <CodeBlock/>
             </div>
-        </div>
+        </header>
     )
 }

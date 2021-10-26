@@ -1,9 +1,14 @@
 import NavigationBarLink from './NavigationBarLink'
+import Link from 'next/link'
 
 export default function NavigationBar() {
     return (
         <nav className="flex flex-row w-full h-12 py-2 px-8 bg-transparent">
-            <img src="/images/Skyclo_logo_460x460.png" className="w-6 h-6 my-auto" alt="Brand Logo"/>
+            <Link href="/">
+                <a>
+                    <img src="/images/Skyclo_logo_460x460.png" className="w-6 h-6 my-auto" alt="Brand Logo"/>
+                </a>
+            </Link>
             <div className="ml-auto my-auto">
                 <ul className="flex flex-row space-x-4 ">
                     <li>
