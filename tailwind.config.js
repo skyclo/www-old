@@ -12,6 +12,7 @@ const tailwind_config = {
     extend: {
       colors: {
         gray: colors.coolGray,
+        orange: colors.orange,
       },
       zIndex: {
         '-1': '-1',
