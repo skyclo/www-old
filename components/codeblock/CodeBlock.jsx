@@ -20,7 +20,7 @@ export default function CodeBlock () {
     ]
     code = Highlight.highlightAuto(code.join('\n')).value.split('\n')
     return (
-        <div className="flex flex-col z-10 my-auto ml-auto w-max max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl">
+        <div className="flex flex-col flex-shrink z-10 my-auto ml-auto min-w-min max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl">
             <div className="grid gird-flow-col grid-cols-3 w-full h-6 px-4 rounded-t-md">
                 <div className="flex flex-row space-x-1 my-auto">
                     <div className="bg-gray-700 rounded-full w-2 h-2"></div>
