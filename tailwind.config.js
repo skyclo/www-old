@@ -57,6 +57,12 @@ const tailwind_config = {
           }
         },
       },
+      height: {
+        '120': '480px',
+      },
+      margin: {
+        '1/8': '12.5%',
+      },
     },
   },
   variants: {
