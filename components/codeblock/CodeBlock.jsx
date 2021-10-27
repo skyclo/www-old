@@ -19,7 +19,6 @@ export default function CodeBlock () {
         'Me.sayHelloWorld()'
     ]
     code = Highlight.highlightAuto(code.join('\n')).value.split('\n')
-    console.log(code)
     return (
         <div className="flex flex-col z-10 my-auto ml-auto w-max max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl">
             <div className="grid gird-flow-col grid-cols-3 w-full h-6 px-4 rounded-t-md">
@@ -38,7 +37,7 @@ export default function CodeBlock () {
                 }
             </div>
             <div className="border-t-2 border-gray-50 border-opacity-10 w-full px-6 py-3">
-                <div class="flex flex-row font-mono text-left text-medium text-xs space-x-4 text-gray-50">
+                <div className="flex flex-row font-mono text-left text-medium text-xs space-x-4 text-gray-50">
                     <p>$</p>
                     <p className="text-green-500">"Hello, World! My name is Conor"</p>
                 </div>

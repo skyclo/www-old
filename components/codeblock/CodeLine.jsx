@@ -1,7 +1,7 @@
 
 export default function CodeLine({line, code}) {
     return (
-        <div className="flex flex-row">
+        <div className="flex flex-row" key={line}>
             <span className="font-mono text-xs my-auto text-right align-right w-8 pl-4 pr-1 text-gray-700 font-bold">
                 {line}
             </span>
