@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 export default function NavigationBar() {
     return (
-        <nav className="flex flex-row w-full h-12 py-2 px-8 bg-transparent">
-            <Link href="/">
-                <a>
-                    <img src="/images/Skyclo_logo.svg" className="w-6 h-6 my-auto" alt="Brand Logo"/>
+        <nav className="relative flex flex-row z-20 w-full h-12 py-2 px-8 bg-transparent">
+            <Link href="/" className="">
+                <a className="w-4 h-4 sm:w-6 sm:h-6 flex-shrink-0 my-auto">
+                    <img src="/images/Skyclo_logo.svg" className="w-fill h-auto" alt="Brand Logo"/>
                 </a>
             </Link>
             <div className="ml-auto my-auto">
-                <ul className="flex flex-row space-x-4 ">
+                <ul className="flex flex-row space-x-1 md:space-x-2 lg:space-x-4 2xl:space-x-6">
                     <li>
                         <NavigationBarLink page="/" pageName="Home"/>
                     </li>
