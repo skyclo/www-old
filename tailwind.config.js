@@ -1,3 +1,4 @@
+const { trueGray } = require( 'tailwindcss/colors' )
 const colors = require('tailwindcss/colors')
 
 const tailwind_config = {
@@ -17,6 +18,44 @@ const tailwind_config = {
       zIndex: {
         '-1': '-1',
         '-10': '-10',
+      },
+      animation: {
+        logointro: "logointro 5s ease-in-out 2s forwards",
+        logobackintro: "logobackintro 8s ease-in-out 0s forwards",
+      },
+      keyframes: {
+        logointro: {
+          "0%": {
+            transform: "scale(100%)",
+            opacity: "0%",
+          },
+          "5%": {
+            transform: "scale(75%)",
+            opacity: "100%",
+          },
+          "98%": {
+            transform: "scale(75%)",
+            opacity: "100%",
+          },
+          "100%": {
+            transform: "scale(150%)",
+            opacity: "0%",
+          },
+        },
+        logobackintro: {
+          "0%": {
+            opacity: "100%",
+            zIndex: "40",
+          },
+          "95%": {
+            opacity: "100%",
+            zIndex: "40",
+          },
+          "100%": {
+            opacity: "0%",
+            zIndex: "-10",
+          }
+        },
       },
     },
   },
