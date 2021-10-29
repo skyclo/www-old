@@ -4,15 +4,15 @@ import { useEffect, useState } from "react"
 export default function ProjectCarousel({ data }) {
     const [slide, setSlide] = useState(0)
 
+    let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-gray-950 cursor-pointer'
+    let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full mr-12 bg-gray-950 rounded-2xl shadow-xl ring-1 ring-gray-500 ring-opacity-20"
+
     useEffect(() => {
         let slides = document.getElementsByClassName('project-carousel')
         let slideNav = document.getElementsByClassName('slide-selector')
         let parent = slides[ 0 ].parentNode
         let slideWidth = slides[0].clientWidth
         let totalSpacing = 48 * slide
-
-        let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-gray-950 cursor-pointer'
-        let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full bg-gray-950 rounded-2xl shadow-xl"
 
         for (let i = 0; i < slideNav.length; i++) {
             slideNav[i].className = defaultSlideNavStyle + ' w-2 opacity-40'
@@ -24,20 +24,20 @@ export default function ProjectCarousel({ data }) {
         }
         slides[slide].className = defaultSlideStyle + ' opacity-100'
 
-        /* parent.style['margin-left'] = (0.25 * parent.clientWidth) + 'px' */
+        /* parent.style['margin-left'] = (0.5*slides[0].clientWidth) + 'px' */
 
-        parent.style['transform'] = 'translate(-' + ((slideWidth * slide) + totalSpacing) + 'px, 0)'
+        parent.style['transform'] = 'translate(' + (((window.innerWidth/2) - 96 - totalSpacing - (slide * slideWidth) - (slideWidth/2))) + 'px, 0)' // god help me
     }, [slide])
 
     return (
         <div className="flex flex-col w-full px-24 py-16">
             <h2 className="mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Projects</h2>
-            <div className="flex flex-row space-x-12 mt-8 h-120 w-full overflow-x-visible">
+            <div className="flex flex-row mt-8 md:h-72 lg:h-120 w-full overflow-x-visible">
                 {
                     data.map((item, i) => {
                         return (
                             <div
-                                className="project-carousel"
+                                className={defaultSlideStyle}
                                 key={"project-carousel-" + i}
                                 onClick={(e) => setSlide(i)}
                             >
@@ -52,7 +52,7 @@ export default function ProjectCarousel({ data }) {
                     data.map((item, i) => {
                         return (
                             <div
-                                className="slide-selector"
+                                className={defaultSlideNavStyle}
                                 key={"slide-selector-" + i}
                                 onClick={(e) => setSlide(i)}
                             ></div>
