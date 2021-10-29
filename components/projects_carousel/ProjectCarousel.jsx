@@ -12,7 +12,7 @@ export default function ProjectCarousel({ data }) {
         let totalSpacing = 48 * slide
 
         let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-gray-950 cursor-pointer'
-        let defaultSlideStyle = "project-carousel relative flex flex-row flex-shrink-0 w-3/4 h-full bg-gray-950 rounded-2xl shadow-xl"
+        let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full bg-gray-950 rounded-2xl shadow-xl"
 
         for (let i = 0; i < slideNav.length; i++) {
             slideNav[i].className = defaultSlideNavStyle + ' w-2 opacity-40'
@@ -20,13 +20,11 @@ export default function ProjectCarousel({ data }) {
         slideNav[slide].className = defaultSlideNavStyle + ' w-6 opacity-80'
 
         for (let i = 0; i < slides.length; i++) {
-            slides[i].className = defaultSlideStyle + ' opacity-90'
+            slides[i].className = defaultSlideStyle + ' opacity-50'
         }
-
         slides[slide].className = defaultSlideStyle + ' opacity-100'
 
-
-        parent.style['margin-left'] = '12.5%'
+        /* parent.style['margin-left'] = (0.25 * parent.clientWidth) + 'px' */
 
         parent.style['transform'] = 'translate(-' + ((slideWidth * slide) + totalSpacing) + 'px, 0)'
     }, [slide])
