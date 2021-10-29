@@ -4,6 +4,7 @@ import Header from '../components/header/Header'
 import ProjectCarousel from '../components/projects_carousel/ProjectCarousel'
 import IdeoxanProjectCarousel from '../components/projects_carousel/items/Ideoxan'
 import SerenadeProjectCarousel from '../components/projects_carousel/items/Serenade'
+import SCDLProjectCarousel from '../components/projects_carousel/items/SCDL'
 
 export default function Showcase() {
     let projectsData = [
@@ -17,6 +18,12 @@ export default function Showcase() {
             name: "Serenade",
             objects: {
                 Component: SerenadeProjectCarousel
+            }
+        },
+        {
+            name: "SCDL",
+            objects: {
+                Component: SCDLProjectCarousel
             }
         },
     ]
