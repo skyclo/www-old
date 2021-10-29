@@ -39,7 +39,7 @@ export default function ProjectCarousel({ data }) {
                     data.map((item, i) => {
                         return (
                             <div
-                                class="project-carousel"
+                                className="project-carousel"
                                 key={"project-carousel-" + i}
                                 onClick={(e) => setSlide(i)}
                             >
@@ -54,7 +54,7 @@ export default function ProjectCarousel({ data }) {
                     data.map((item, i) => {
                         return (
                             <div
-                                class="slide-selector"
+                                className="slide-selector"
                                 key={"slide-selector-" + i}
                                 onClick={(e) => setSlide(i)}
                             ></div>
