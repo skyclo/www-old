@@ -21,7 +21,7 @@ export default function CodeBlock ({code, output}) {
                     })
                 }
             </div>
-            <CodeBlockOutput/>
+            <CodeBlockOutput output={output}/>
         </div>
     )
 }
