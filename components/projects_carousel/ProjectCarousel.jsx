@@ -32,7 +32,7 @@ export default function ProjectCarousel({ data }) {
     return (
         <div className="flex flex-col w-full px-24 py-16">
             <h2 className="mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Projects</h2>
-            <div className="flex flex-row mt-8 md:h-72 lg:h-120 w-full overflow-x-visible">
+            <div className="flex flex-row mt-8 h-72 lg:h-120 w-full overflow-x-visible">
                 {
                     data.map((item, i) => {
                         return (
