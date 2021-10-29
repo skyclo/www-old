@@ -2,6 +2,21 @@ import * as Icon from 'react-feather'
 import CodeBlock from '../codeblock/CodeBlock'
 
 export default function Hero() {
+    let code = [
+        'class Conor {',
+        '\tconstructor() {',
+        '\t\tthis.name = \'Conor\'',
+        '\t}',
+        '',
+        '\tsayHelloWorld() {',
+        '\t\tconsole.log(\`Hello, World! My name is $\{this.name\}\`)',
+        '\t\treturn',
+        '\t}',
+        '}',
+        '',
+        'let Me = new Conor()',
+        'Me.sayHelloWorld()'
+    ]
     return (
         <header className="flex row px-4 lg:px-12 xl:px-24 mx-auto h-screen -mt-12">
             <div className="flex flex-col my-auto mx-auto lg:ml-0 lg:mr-auto">
@@ -30,7 +45,7 @@ export default function Hero() {
             </div>
             <div className="hidden lg:flex flex-row relative ml-auto my-auto">
                 <img src="/images/hero_glow1.png" className="absolute z-0 right-1/4 -top-1/2 opacity-30" alt=""/>
-                <CodeBlock/>
+                <CodeBlock code={code} output={'"Hello, World! My name is Conor"'}/>
             </div>
         </header>
     )

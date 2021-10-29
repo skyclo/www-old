@@ -2,25 +2,10 @@ import CodeLine from './CodeLine'
 import Highlight from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 
-export default function CodeBlock () {
-    let code = [
-        'class Conor {',
-        '\tconstructor() {',
-        '\t\tthis.name = \'Conor\'',
-        '\t}',
-        '',
-        '\tsayHelloWorld() {',
-        '\t\tconsole.log(\`Hello, World! My name is $\{this.name\}\`)',
-        '\t\treturn',
-        '\t}',
-        '}',
-        '',
-        'let Me = new Conor()',
-        'Me.sayHelloWorld()'
-    ]
-    code = Highlight.highlightAuto(code.join('\n')).value.split('\n')
+export default function CodeBlock ({code, output}) {
+    let highlightedCode = Highlight.highlightAuto(code.join('\n')).value.split('\n')
     return (
-        <div className="flex flex-col flex-shrink z-10 my-auto ml-auto min-w-min max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl">
+        <div className="flex flex-col flex-shrink z-10 my-auto ml-auto min-w-min max-w-full bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg shadow-2xl ring-1 ring-gray-500 ring-opacity-10">
             <div className="grid gird-flow-col grid-cols-3 w-full h-6 px-4 rounded-t-md">
                 <div className="flex flex-row space-x-1 my-auto">
                     <div className="bg-gray-700 rounded-full w-2 h-2"></div>
@@ -31,17 +16,25 @@ export default function CodeBlock () {
             </div>
             <div className="grid grid-flow-row bg-transparent space-y-0 mt-2 mb-4">
                 {
-                    code.map((value, index, array) => {
+                    highlightedCode.map((value, index, array) => {
                         return <CodeLine line={index} code={{__html: "<pre>" + value + "</pre>"}}/>
                     })
                 }
             </div>
+            <CodeBlockOutput/>
+        </div>
+    )
+}
+
+function CodeBlockOutput ({output}) {
+    if (output) {
+        return (
             <div className="border-t-2 border-gray-50 border-opacity-10 w-full px-6 py-3">
                 <div className="flex flex-row font-mono text-left text-medium text-xs space-x-4 text-gray-50">
                     <p>$</p>
-                    <p className="text-green-500">"Hello, World! My name is Conor"</p>
+                    <p className="text-green-500">{output}</p>
                 </div>
             </div>
-        </div>
-    )
+        )
+    } else return null
 }
