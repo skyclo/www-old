@@ -12,7 +12,7 @@ export default function IdeoxanProjectCarousel () {
                     Learn More
                 </a>
             </div>
-            <img src="/images/ix_screenshot_preview.png" alt="Ideoxan Website Preview" className="hidden lg:block my-auto ml-auto w-auto h-full"/>
+            <img src="/images/ix_screenshot_preview.png" alt="A picture of the Ideoxan website" className="hidden lg:block my-auto ml-auto w-auto h-full"/>
         </div>
     )
 }
