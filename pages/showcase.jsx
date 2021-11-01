@@ -8,6 +8,7 @@ import SCDLProjectCarousel from '../components/projects_carousel/items/SCDL'
 import SkoshProjectCarousel from '../components/projects_carousel/items/Skosh'
 import ProjectsCallToAction from '../components/projects_cta/ProjectsCTA'
 import Footer from '../components/footer/Footer'
+import ProjectsArt from '../components/projects_art/ProjectsArt'
 
 export default function Showcase() {
     let projectsData = [
@@ -46,6 +47,7 @@ export default function Showcase() {
                 <Header headerName="Showcase" colorFrom="orange-500" colorTo="yellow-500"/>
                 <ProjectCarousel data={projectsData}/>
                 <ProjectsCallToAction/>
+                <ProjectsArt/>
                 <Footer/>
             </body>
         </html>
