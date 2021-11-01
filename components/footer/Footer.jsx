@@ -2,11 +2,8 @@ import Link from "next/link"
 
 export default function Footer () {
     return (
-        <footer className="mt-16 bg-gray-950 overflow-hidden h-96">
-            <div className="relative z-40 w-full h-12 bg-gray-50" style={{borderBottomLeftRadius: 50 + "% " + 40 + "%", borderBottomRightRadius: 50 + "% " + 40 + "%"}}>
-                {/* Don't even ask */}
-            </div>
-            <div className="flex flex-row w-full h-full">
+        <footer className="mt-16 bg-gray-950 overflow-hidden">
+            <div className="flex flex-row w-full">
                 <div className="px-12 py-14">
                     <h2 className="font-sans font-extrabold tracking-wide text-left text-4xl text-gray-50 opacity-30">skyclo</h2>
                     <h3 className="mt-0.5 font-sans font-bold tracking-normal text-left text-xs text-gray-50 opacity-30">A Conor Daly Brand</h3>
@@ -34,7 +31,7 @@ export default function Footer () {
                         </li>
                     </ul>
                 </div>
-                <img src="/images/Skyclo_logo.svg" alt="Skyclo Branding Logo" className="relative -mt-16 transform scale-200 opacity-10 ml-auto"/>
+                <img src="/images/Skyclo_logo.svg" alt="Skyclo Branding Logo" className="relative -mt-12 transform scale-200 opacity-10 ml-auto"/>
             </div>
         </footer>
     )
