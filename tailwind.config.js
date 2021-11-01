@@ -11,6 +11,9 @@ const tailwind_config = {
       'mono': ['Cascadia Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation\ Mono"', '"Courier\ New"', 'monospace']
     },
     extend: {
+      scale: {
+        '200': '2',
+      },
       colors: {
         gray: colors.coolGray,
         orange: colors.orange,

@@ -7,6 +7,7 @@ import SerenadeProjectCarousel from '../components/projects_carousel/items/Seren
 import SCDLProjectCarousel from '../components/projects_carousel/items/SCDL'
 import SkoshProjectCarousel from '../components/projects_carousel/items/Skosh'
 import ProjectsCallToAction from '../components/projects_cta/ProjectsCTA'
+import Footer from '../components/footer/Footer'
 
 export default function Showcase() {
     let projectsData = [
@@ -45,6 +46,7 @@ export default function Showcase() {
                 <Header headerName="Showcase" colorFrom="orange-500" colorTo="yellow-500"/>
                 <ProjectCarousel data={projectsData}/>
                 <ProjectsCallToAction/>
+                <Footer/>
             </body>
         </html>
     )
