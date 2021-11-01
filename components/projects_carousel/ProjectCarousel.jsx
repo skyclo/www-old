@@ -5,7 +5,7 @@ export default function ProjectCarousel({ data }) {
     const [slide, setSlide] = useState(0)
 
     let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-gray-950 cursor-pointer'
-    let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full mr-12 bg-gray-950 rounded-2xl shadow-xl ring-1 ring-gray-500 ring-opacity-20"
+    let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full mr-12 bg-gray-950 rounded-2xl ring-1 ring-gray-500 ring-opacity-20"
 
     useEffect(() => {
         let slides = document.getElementsByClassName('project-carousel')
@@ -20,9 +20,9 @@ export default function ProjectCarousel({ data }) {
         slideNav[slide].className = defaultSlideNavStyle + ' w-6 opacity-80'
 
         for (let i = 0; i < slides.length; i++) {
-            slides[i].className = defaultSlideStyle + ' opacity-50'
+            slides[i].className = defaultSlideStyle + ' opacity-50 shadow-lg'
         }
-        slides[slide].className = defaultSlideStyle + ' opacity-100'
+        slides[slide].className = defaultSlideStyle + ' opacity-100 shadow-xl'
 
         /* parent.style['margin-left'] = (0.5*slides[0].clientWidth) + 'px' */
 
