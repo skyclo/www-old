@@ -29,7 +29,7 @@
 }
 @font-face {
     font-family: 'Cascadia Mono';
-    src: url('/fonts/CascadiaMono.woff2') format('woff2');
+    src: url('/fonts/CascadiaCode.woff2') format('woff2');
 }
 
 @layer utilities {
