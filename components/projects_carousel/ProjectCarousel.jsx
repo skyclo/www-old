@@ -14,6 +14,8 @@ export default function ProjectCarousel({ data }) {
         let slideWidth = slides[0].clientWidth
         let totalSpacing = 48 * slide
 
+        parent.style['transform'] = 'translateX(' + (((window.innerWidth/2) - 96 - totalSpacing - (slide * slideWidth) - (slideWidth/2))) + 'px)' // god help me
+
         for (let i = 0; i < slideNav.length; i++) {
             slideNav[i].className = defaultSlideNavStyle + ' w-2 opacity-40'
         }
@@ -23,14 +25,10 @@ export default function ProjectCarousel({ data }) {
             slides[i].className = defaultSlideStyle + ' opacity-50 shadow-lg'
         }
         slides[slide].className = defaultSlideStyle + ' opacity-100 shadow-xl'
-
-        /* parent.style['margin-left'] = (0.5*slides[0].clientWidth) + 'px' */
-
-        parent.style['transform'] = 'translate(' + (((window.innerWidth/2) - 96 - totalSpacing - (slide * slideWidth) - (slideWidth/2))) + 'px, 0)' // god help me
     }, [slide])
 
     return (
-        <div className="flex flex-col w-full px-24 py-16">
+        <div className="animate-fadeupwards flex flex-col w-full px-24 py-16">
             <h2 className="mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Projects</h2>
             <div className="flex flex-row mt-8 h-72 lg:h-120 w-full overflow-x-visible">
                 {

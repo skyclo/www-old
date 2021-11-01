@@ -21,11 +21,11 @@ export default function Hero() {
         <header className="flex row px-4 lg:px-12 xl:px-24 mx-auto h-screen -mt-12">
             <div className="flex flex-col my-auto mx-auto lg:ml-0 lg:mr-auto">
                 <h1
-                    className="mx-auto font-sans text-center lg:text-left text-4xl md:text-5xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text">
+                    className="mx-auto animate-fadeupwards font-sans text-center lg:text-left text-4xl md:text-5xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text">
                         Hello, my name is Conor.
                 </h1>
-                <h2 className="mt-2 mx-auto lg:mx-0 font-sans text-center lg:text-left text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-400">Designer, Programmer, Entrepreneur</h2>
-                <div className="flex flex-row mx-auto lg:mx-0 mt-4 space-x-6">
+                <h2 className="mt-2 mx-auto lg:mx-0 animate-fadeupwards font-sans text-center lg:text-left text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-400">Designer, Programmer, Entrepreneur</h2>
+                <div className="flex flex-row mx-auto lg:mx-0 mt-4 animate-fadeupwards space-x-6">
                     <a target="_blank" href="https://github.com/skyclo">
                         <Icon.GitHub className="w-4 h-4 text-gray-50 opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
@@ -43,7 +43,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="hidden lg:flex flex-row relative ml-auto my-auto">
+            <div className="hidden lg:flex flex-row relative ml-auto my-auto animate-fadeupwards ">
                 <img src="/images/hero_glow1.png" className="absolute z-0 right-1/4 -top-1/2 opacity-30" alt=""/>
                 <CodeBlock code={code} output={'"Hello, World! My name is Conor"'}/>
             </div>

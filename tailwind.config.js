@@ -25,6 +25,7 @@ const tailwind_config = {
       animation: {
         logointro: "logointro 5s ease-in-out 2s forwards",
         logobackintro: "logobackintro 8s ease-in-out 0s forwards",
+        fadeupwards: "fadeupwards 600ms ease-in-out 0s",
       },
       keyframes: {
         logointro: {
@@ -57,6 +58,20 @@ const tailwind_config = {
           "100%": {
             opacity: "0%",
             zIndex: "-10",
+          }
+        },
+        fadeupwards: {
+          "0%": {
+            opacity: "0%",
+            transform: "translateY(20px)",
+          },
+          "50%": {
+            opacity: "0%",
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: "100%",
+            transform: "translateY(0px)",
           }
         },
       },
