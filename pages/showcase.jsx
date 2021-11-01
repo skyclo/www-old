@@ -6,6 +6,7 @@ import IdeoxanProjectCarousel from '../components/projects_carousel/items/Ideoxa
 import SerenadeProjectCarousel from '../components/projects_carousel/items/Serenade'
 import SCDLProjectCarousel from '../components/projects_carousel/items/SCDL'
 import SkoshProjectCarousel from '../components/projects_carousel/items/Skosh'
+import ProjectsCallToAction from '../components/projects_cta/ProjectsCTA'
 
 export default function Showcase() {
     let projectsData = [
@@ -43,6 +44,7 @@ export default function Showcase() {
                 <NavigationBar/>
                 <Header headerName="Showcase" colorFrom="orange-500" colorTo="yellow-500"/>
                 <ProjectCarousel data={projectsData}/>
+                <ProjectsCallToAction/>
             </body>
         </html>
     )
