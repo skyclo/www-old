@@ -31,7 +31,7 @@ export default function Footer () {
                         </li>
                     </ul>
                 </div>
-                <img src="/images/Skyclo_logo.svg" alt="Skyclo Branding Logo" className="relative -mt-12 transform scale-200 opacity-10 ml-auto"/>
+                <img src="/images/Skyclo_logo.svg" alt="Skyclo Branding Logo" className="relative -mt-12 -mb-12 transform scale-200 opacity-10 ml-auto"/>
             </div>
         </footer>
     )
