@@ -1,11 +1,15 @@
-const { trueGray } = require( 'tailwindcss/colors' )
 const colors = require('tailwindcss/colors')
 
 const tailwind_config = {
-  purge: [
-    './pages/**/*.jsx',
-    './components/**/*.jsx'
-  ],
+  purge: {
+    content: [
+      './pages/**/*.jsx',
+      './components/**/*.jsx'
+    ],
+    options: {
+      safelist: [/^(from||to)-[a-z0-9-]*/]
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
