@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import { useEffect } from 'react'
+import HeadMetaTags from '../components/meta/Meta'
 import NavigationBar from '../components/navigation/NavigationBar'
 
 export default function Custom404Page () {
@@ -16,9 +16,7 @@ export default function Custom404Page () {
 
     return (
         <html lang="en">
-            <Head>
-                <title>Skyclo | 404</title>
-            </Head>
+            <HeadMetaTags pageTitle="Error: Not Found"/>
             <body className="h-screen w-screen bg-gray-950 overflow-x-hidden">
                 <NavigationBar/>
                 <main className="flex flex-col h-full w-full bg-gray-950 -mt-12">

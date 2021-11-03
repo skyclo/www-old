@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import HeadMetaTags from '../components/meta/Meta'
 import NavigationBar from '../components/navigation/NavigationBar'
 import Header from '../components/header/Header'
 import ProjectCarousel from '../components/projects_carousel/ProjectCarousel'
@@ -39,9 +39,7 @@ export default function Showcase() {
     ]
     return (
         <html lang="en">
-            <Head>
-                <title>Skyclo | Showcase</title>
-            </Head>
+            <HeadMetaTags pageTitle="Showcase"/>
             <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
                 <NavigationBar/>
                 <Header headerName="Showcase" colorFrom="orange-500" colorTo="yellow-500"/>
