@@ -24,10 +24,9 @@ export default function HeadMetaTags ({pageTitle}) {
             <meta name="twitter:url" content="https://skyclo.dev"/>
 
             <meta prefix="og: http://ogp.me/ns#" property="og:title" content={"Conor's Website" + pageTitle}/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:type" content="photo"/>
             <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
             <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Skyclo"/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Conor's interactive, online portfolio."/>
             <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://skyclo.dev/"/>
             <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://skyclo.dev/images/og_thumbnail.png"/>
             <meta prefix="og: http://ogp.me/ns#" name="theme-color" content="#050a15"/>
