@@ -23,10 +23,10 @@ export default function HeadMetaTags ({pageTitle}) {
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content="https://www.skyclo.dev/"/>
-            <meta property="twitter:title" content={"Conor's Website" + pageTitle}/>
-            <meta property="twitter:description" content="Conor's interactive, online portfolio."/>
-            <meta property="twitter:image" content="https://www.skyclo.dev/images/og_thumbnail.png"/>
+            <meta name="twitter:url" content="https://www.skyclo.dev/"/>
+            <meta name="twitter:title" content={"Conor's Website" + pageTitle}/>
+            <meta name="twitter:description" content="Conor's interactive, online portfolio."/>
+            <meta name="twitter:image" content="https://www.skyclo.dev/images/og_thumbnail.png"/>
 
             <meta name="keywords" content="Skyclo, Conor Daly, Bryce Daly, Programming, Portfolio, ePortfolio, Online Portfolio, Website Development, Web Dev, Coding, Ideoxan, Serenade, node-scdl, Developer Portfolio, Developer, Backend, Frontend, Resume"/>
             <meta name="image" content="https://www.skyclo.dev/images/og_thumbnail.png"/>
