@@ -12,7 +12,7 @@ const tailwind_config = {
     },
     extend: {
       fontSize: {
-        'xxs': '0.6rem',
+        '2xs': '0.6rem',
       },
       scale: {
         '200': '2',

@@ -17,25 +17,25 @@ export default function ProjectArtCard ({data}) {
                             switch (value) {
                                 case 1:
                                     return (
-                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-xxs text-green-900 bg-green-200">
+                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-2xs text-green-900 bg-green-200">
                                             User Interface (UI)
                                         </div>
                                     )
                                 case 2:
                                     return (
-                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-xxs text-blue-900 bg-blue-200">
+                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-2xs text-blue-900 bg-blue-200">
                                             Redesign
                                         </div>
                                     )
                                 case 3:
                                     return (
-                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-xxs text-yellow-900 bg-yellow-200">
+                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-2xs text-yellow-900 bg-yellow-200">
                                             Photography
                                         </div>
                                     )
                                 case 4:
                                     return (
-                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-xxs text-purple-900 bg-purple-200">
+                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-2xs text-purple-900 bg-purple-200">
                                             Digital Artwork
                                         </div>
                                     )
