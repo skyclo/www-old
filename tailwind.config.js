@@ -11,6 +11,9 @@ const tailwind_config = {
       'mono': ['Cascadia Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation\ Mono"', '"Courier\ New"', 'monospace']
     },
     extend: {
+      fontSize: {
+        'xxs': '0.6rem',
+      },
       scale: {
         '200': '2',
       },
@@ -84,7 +87,9 @@ const tailwind_config = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['hover', 'group-hover']
+    },
   },
   plugins: [],
 }

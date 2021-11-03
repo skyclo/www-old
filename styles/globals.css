@@ -33,6 +33,24 @@
 }
 
 @layer utilities {
+    @variants responsive {
+        .masonry-col-5 {
+            column-count: 5;
+        }
+        .masonry-col-4 {
+            column-count: 4;
+        }
+        .masonry-col-3 {
+            column-count: 3;
+        }
+        .masonry-col-2 {
+            column-count: 2;
+        }
+        .masonry-col-1 {
+            column-count: 1;
+        }
+    }
+
     * {
         @apply transition-all duration-300 ease-in-out delay-75;
     }
