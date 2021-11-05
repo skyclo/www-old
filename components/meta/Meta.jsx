@@ -36,7 +36,6 @@ export default function HeadMetaTags ({pageTitle}) {
                         return (<meta name="twitter:card" content="summary_large_image"/>)
                 })()
             }
-            <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:url" content="https://www.skyclo.dev/"/>
             <meta name="twitter:title" content={"Conor's Website" + pageTitle}/>
             <meta name="twitter:description" content="Conor's interactive, online portfolio."/>
