@@ -4,8 +4,6 @@ import Head from "next/head"
 export default function HeadMetaTags ({pageTitle}) {
     const { query } = useRouter()
 
-    console.log(query)
-
     if (pageTitle) pageTitle = ' | ' + pageTitle
     else pageTitle = ''
 

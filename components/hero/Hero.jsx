@@ -1,5 +1,6 @@
 import * as Icon from 'react-feather'
 import CodeBlock from '../codeblock/CodeBlock'
+import Image from 'next/image'
 
 export default function Hero() {
     let code = [
@@ -43,8 +44,10 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="hidden lg:flex flex-row relative ml-auto my-auto animate-fadeupwards ">
-                <img src="/images/hero_glow1.png" className="absolute z-0 right-1/4 -top-1/2 opacity-30" alt=""/>
+            <div className="hidden lg:flex flex-row ml-auto my-auto animate-fadeupwards">
+                <div className="absolute z-0 left-1/4 bottom-0 opacity-20 w-full h-full">
+                    <Image src="/images/hero_glow1.png" layout="fill" objectFit="contain" alt="" />
+                </div>
                 <CodeBlock code={code} output={'"Hello, World! My name is Conor"'}/>
             </div>
         </header>

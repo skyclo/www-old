@@ -1,5 +1,6 @@
 
 export default function ProjectArtCard ({data}) {
+    // TODO: Use Image Component
     return (
         <div
             className="relative group flex flex-col transform scale-100 hover:scale-105 w-full mb-6 bg-black rounded-lg ring-1 ring-gray-500 ring-opacity-20 shadow-lg hover:shadow-2xl cursor-pointer"
