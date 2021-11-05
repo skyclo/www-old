@@ -1,8 +1,14 @@
+import { useRouter } from "next/dist/client/router"
 import Head from "next/head"
 
 export default function HeadMetaTags ({pageTitle}) {
+    const { query } = useRouter()
+
+    console.log(query)
+
     if (pageTitle) pageTitle = ' | ' + pageTitle
     else pageTitle = ''
+
     return (
         <Head>
             <meta charSet="UTF-8"/>
@@ -22,6 +28,14 @@ export default function HeadMetaTags ({pageTitle}) {
             <meta property="og:image" content="https://www.skyclo.dev/images/og_thumbnail.png"/>
 
             {/* Twitter */}
+            {
+                (() => {
+                    if (query.sm_card == "true")
+                        return (<meta name="twitter:card" content="summary"/>)
+                    else
+                        return (<meta name="twitter:card" content="summary_large_image"/>)
+                })()
+            }
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:url" content="https://www.skyclo.dev/"/>
             <meta name="twitter:title" content={"Conor's Website" + pageTitle}/>
