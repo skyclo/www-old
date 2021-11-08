@@ -14,7 +14,7 @@ export default function ProjectArtCard ({data}) {
                 alt={data.coverImage.alt}
                 className="w-full h-auto rounded-lg"
                 placeholder="blur"
-                blurDataURL={'data:image/jpeg;base64,/9j/' + data.coverImage.blurString}
+                blurDataURL={`data:image/jpeg;base64,/9j/${data.coverImage.blurString}`}
             />
             <div className="absolute flex flex-col w-full h-full px-4 py-2 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-100 bg-opacity-20 rounded-lg">
                 <h3 className="group-hover:animate-fadeupwards mt-auto font-sans font-bold text-left text-lg text-gray-50">{data.info.title}</h3>
