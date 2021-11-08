@@ -11,7 +11,7 @@ export default function SerenadeProjectCarousel () {
                 <p className="mt-2 mx-auto font-sans text-gray-200 font-medium text-normal text-center">An intelligent Discord music bot that uses machine learning algorithms and voice-activated queues to serve music to users. (Discontinued) </p>
             </div>
             <div className="relative hidden lg:block mt-auto ml-auto w-full h-full mr-4">
-                <Image src="/images/serenade_screenshot_preview.png" alt="A picture of the Serenade Help Command Output" layout="fill" objectFit="contain"/>
+                <Image src="/images/serenade_screenshot_preview.webp" alt="A picture of the Serenade Help Command Output" layout="fill" objectFit="contain"/>
             </div>
         </div>
     )

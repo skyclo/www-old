@@ -46,7 +46,7 @@ export default function Hero() {
             </div>
             <div className="hidden lg:flex flex-row ml-auto my-auto animate-fadeupwards">
                 <div className="absolute z-0 left-1/4 bottom-0 opacity-20 w-full h-full">
-                    <Image src="/images/hero_glow1.png" layout="fill" objectFit="contain" alt="" />
+                    <Image src="/images/hero_glow1.webp" layout="fill" objectFit="contain" alt="" />
                 </div>
                 <CodeBlock code={code} output={'"Hello, World! My name is Conor"'}/>
             </div>

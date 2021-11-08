@@ -23,7 +23,7 @@ export default function Custom404Page () {
                 <main className="flex flex-col h-full w-full bg-gray-950 -mt-12">
                     <div className="mx-auto my-auto">
                         <div className="relative mx-auto h-60 w-auto">
-                            <Image id="u_0281392" src="/images/error_tv.png" alt="Old 90's CRT TV" layout="fill" objectFit="contain"/>
+                            <Image id="u_0281392" src="/images/error_tv.webp" alt="Old 90's CRT TV" layout="fill" objectFit="contain"/>
                         </div>
                         <h1 className="mx-auto font-sans text-center font-extrabold tracking-tight text-gray-50 text-6xl">Uh oh...</h1>
                         <h2 className="mx-auto mt-2 font-sans text-center font-medium text-gray-200 text-base">Looks like something broke</h2>

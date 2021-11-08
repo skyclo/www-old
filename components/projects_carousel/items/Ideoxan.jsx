@@ -14,7 +14,7 @@ export default function IdeoxanProjectCarousel () {
                 </a>
             </div>
             <div className="relative hidden lg:block my-auto ml-auto w-full h-full">
-                <Image src="/images/ix_screenshot_preview.png" alt="A picture of the Ideoxan website" layout="fill" objectFit="contain"/>
+                <Image src="/images/ix_screenshot_preview.webp" alt="A picture of the Ideoxan website" layout="fill" objectFit="contain"/>
             </div>
         </div>
     )
