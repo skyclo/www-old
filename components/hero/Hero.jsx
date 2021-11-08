@@ -1,6 +1,7 @@
 import * as Icon from 'react-feather'
 import CodeBlock from '../codeblock/CodeBlock'
 import Image from 'next/image'
+import heroBlurImage from './../../public/images/hero_glow1.webp'
 
 export default function Hero() {
     let code = [
@@ -44,9 +45,13 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="hidden lg:flex flex-row ml-auto my-auto animate-fadeupwards">
-                <div className="absolute z-0 left-1/4 bottom-0 opacity-20 w-full h-full">
-                    <Image src="/images/hero_glow1.webp" layout="fill" objectFit="contain" alt="" />
+            <div className="hidden lg:flex flex-row relative ml-auto my-auto animate-fadeupwards">
+                <div className="absolute z-0 opacity-30 -left-1/3 -top-2/3">
+                    <Image
+                        src={heroBlurImage}
+                        alt=""
+                        placeholder="blur"
+                    />
                 </div>
                 <CodeBlock code={code} output={'"Hello, World! My name is Conor"'}/>
             </div>

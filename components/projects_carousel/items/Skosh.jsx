@@ -1,4 +1,5 @@
 import Image from "next/image"
+import skoshImage from './../../../public/images/skosh_screenshot_preview.webp'
 
 export default function SkoshProjectCarousel () {
     return (
@@ -10,7 +11,11 @@ export default function SkoshProjectCarousel () {
                 <p className="mt-2 mx-auto lg:mx-0 pr-0 lg:pr-2 font-sans text-gray-200 font-medium text-normal text-center lg:text-left">Skosh (Skyclo Shell) is a bash-lookalike in the browser. It's based on modern DOM and web technologies. Done as a fun little project, it includes a simple command syntax parser and interpreter.</p>
             </div>
             <div className="relative hidden lg:block mt-auto ml-auto w-full h-full">
-                <Image src="/images/skosh_screenshot_preview.webp" alt="A picture of the Skosh (Skyclo Shell) window" layout="fill" objectFit="contain"/>
+                <Image
+                    src={skoshImage}
+                    alt="A picture of the Skosh (Skyclo Shell) window"
+                    placeholder="blur"
+                />
             </div>
         </div>
     )

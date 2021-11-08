@@ -1,13 +1,17 @@
 import NavigationBarLink from './NavigationBarLink'
 import Link from 'next/link'
 import Image from 'next/image'
+import skycloLogo from './../../public/images/Skyclo_logo.svg'
 
 export default function NavigationBar() {
     return (
         <nav className="relative flex flex-row z-20 w-full h-12 py-2 px-8 bg-transparent">
             <Link href="/" className="">
                 <a className="relative w-4 h-4 sm:w-6 sm:h-6 flex-shrink-0 my-auto">
-                    <Image src="/images/Skyclo_logo.svg" layout="fill" objectFit="cover" alt="Brand Logo"/>
+                    <Image
+                        src={skycloLogo}
+                        alt="Brand Logo"
+                    />
                 </a>
             </Link>
             <div className="ml-auto my-auto">

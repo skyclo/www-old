@@ -17,7 +17,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: spotifyRedesignImage,
-                alt: 'A screenshot of the Spotify desktop app user interface redone'
+                alt: 'A screenshot of the Spotify desktop app user interface redone',
+                blurString: 'TD6Sl{spMgd5VtVbKZs;s;t8X5R$'
             },
             link: {
                 url: 'https://dribbble.com/shots/14118643-Spotify-Redesign'
@@ -30,7 +31,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: artNewKerbinImage,
-                alt: 'Two alien astronaughts on a cliff overlooking a colony and watching a rocket launch'
+                alt: 'Two alien astronaughts on a cliff overlooking a colony and watching a rocket launch',
+                blurString: 'TLB|jEn5sU00bHWW~WbuWoIUofs:'
             },
             link: {
                 url: '/images/works/new_kerbin.png'
@@ -43,7 +45,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: artTheLoneSurvivor,
-                alt: 'A man stands in the quiet streets of dismay'
+                alt: 'A man stands in the quiet streets of dismay',
+                blurString: 'TE27S7kcaHaHkFkZVUavkZktfAac'
             },
             link: {
                 url: '/images/works/the_lone_survivor.png'
@@ -56,7 +59,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: artSeries1,
-                alt: 'A parked red sedan sits outside of a donut shop at night'
+                alt: 'A parked red sedan sits outside of a donut shop at night',
+                blurString: 'T49i[H0^0000-T?w83=P[w~qE1Dk'
             },
             link: {
                 url: '/images/works/series_late_night_drive_thru.png'
@@ -69,7 +73,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: artSeries2,
-                alt: 'A man stands on a pier gazing at the rising sun'
+                alt: 'A man stands on a pier gazing at the rising sun',
+                blurString: 'T~MN.LtQW=}skVfRVuWBn%M|aef6'
             },
             link: {
                 url: '/images/works/series_a_new_dawn.png'
@@ -82,7 +87,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: artDelephummingfly,
-                alt: 'A hummingbird with the head of an elephant, wings of a butterfly, and deer horns'
+                alt: 'A hummingbird with the head of an elephant, wings of a butterfly, and deer horns',
+                blurString: 'TFE399||$*qkVGXzByEMTZO,bbrw'
             },
             link: {
                 url: '/images/works/combinedcreature.png'
@@ -95,7 +101,8 @@ export default function ProjectsArt () {
             },
             coverImage: {
                 url: photoClearSkies,
-                alt: 'The branches of a tree intercept a lone cloud in the bright blue skies'
+                alt: 'The branches of a tree intercept a lone cloud in the bright blue skies',
+                blurString: 'T55r=jk]4s,~jDN38^s+?aIXjr%1'
             },
             link: {
                 url: '/images/works/clear_skies.jpg'
@@ -103,7 +110,7 @@ export default function ProjectsArt () {
         },
     ]
     return (
-        <div class="flex flex-col w-full px-24 py-16">
+        <div className="flex flex-col w-full px-24 py-16">
             <h2 className="mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Art, Photography and Designs</h2>
             <div className="masonry-col-1 md:masonry-col-2 lg:masonry-col-3 xl:masonry-col-4 2xl:masonry-col-5 before:box-inherit after:box-inherit mt-8 gap-x-4 gap-y-6">
                 {

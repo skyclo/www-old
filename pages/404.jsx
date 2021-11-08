@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import HeadMetaTags from '../components/meta/Meta'
 import NavigationBar from '../components/navigation/NavigationBar'
 import Image from 'next/image'
+import errorImage from './../public/images/error_tv.webp'
 
 export default function Custom404Page () {
 
@@ -22,8 +23,13 @@ export default function Custom404Page () {
                 <NavigationBar/>
                 <main className="flex flex-col h-full w-full bg-gray-950 -mt-12">
                     <div className="mx-auto my-auto">
-                        <div className="relative mx-auto h-60 w-auto">
-                            <Image id="u_0281392" src="/images/error_tv.webp" alt="Old 90's CRT TV" layout="fill" objectFit="contain"/>
+                        <div className="relative mx-auto w-48 h-auto">
+                            <Image
+                                id="u_0281392"
+                                src={errorImage}
+                                alt="Old 90's CRT TV"
+                                placeholder="blur"
+                            />
                         </div>
                         <h1 className="mx-auto font-sans text-center font-extrabold tracking-tight text-gray-50 text-6xl">Uh oh...</h1>
                         <h2 className="mx-auto mt-2 font-sans text-center font-medium text-gray-200 text-base">Looks like something broke</h2>

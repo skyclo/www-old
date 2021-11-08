@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 
 export default function Footer () {
     return (
@@ -31,7 +30,7 @@ export default function Footer () {
                     </li>
                 </ul>
             </div>
-            <img src="/images/Skyclo_logo.svg" alt="Skyclo Branding Logo" className="relative ml-auto -mt-12 -mb-14 transform scale-200 opacity-10"/>
+            <img src={import('./../../public/images/Skyclo_logo.svg')} alt="Skyclo Branding Logo" className="relative ml-auto -mt-12 -mb-14 transform scale-200 opacity-10"/>
         </footer>
     )
 }
