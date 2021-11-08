@@ -16,7 +16,7 @@ export default function Custom404Page () {
     })
 
     return (
-        <html lang="en">
+        <>
             <HeadMetaTags pageTitle="Error: Not Found"/>
             <body className="h-screen w-screen bg-gray-950 overflow-x-hidden">
                 <NavigationBar/>
@@ -31,6 +31,6 @@ export default function Custom404Page () {
                     </div>
                 </main>
             </body>
-        </html>
+        </>
     )
 }

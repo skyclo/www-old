@@ -38,7 +38,7 @@ export default function Showcase() {
         },
     ]
     return (
-        <html lang="en">
+        <>
             <HeadMetaTags pageTitle="Showcase"/>
             <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
                 <NavigationBar/>
@@ -48,6 +48,6 @@ export default function Showcase() {
                 <ProjectsArt/>
                 <Footer/>
             </body>
-        </html>
+        </>
     )
 }
