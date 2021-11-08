@@ -1,4 +1,11 @@
 import ProjectArtCard from "./ProjectArtCard"
+import spotifyRedesignImage from './../../public/images/works/spotify_redesign.jpeg'
+import artNewKerbinImage from './../../public/images/works/new_kerbin.png'
+import artTheLoneSurvivor from './../../public/images/works/the_lone_survivor.png'
+import artSeries1 from './../../public/images/works/series_late_night_drive_thru.png'
+import artSeries2 from './../../public/images/works/series_a_new_dawn.png'
+import artDelephummingfly from './../../public/images/works/combinedcreature.png'
+import photoClearSkies from './../../public/images/works/clear_skies.jpg'
 
 export default function ProjectsArt () {
     // types: 1 (User Interface), 2 (Redesign), 3 (Photography), 4 (Digital Artwork)
@@ -9,7 +16,7 @@ export default function ProjectsArt () {
                 types: [1, 2]
             },
             coverImage: {
-                url: 'https://i.imgur.com/HPrNX8M.jpeg',
+                url: spotifyRedesignImage,
                 alt: 'A screenshot of the Spotify desktop app user interface redone'
             },
             link: {
@@ -22,7 +29,7 @@ export default function ProjectsArt () {
                 types: [4]
             },
             coverImage: {
-                url: '/images/works/new_kerbin.png',
+                url: artNewKerbinImage,
                 alt: 'Two alien astronaughts on a cliff overlooking a colony and watching a rocket launch'
             },
             link: {
@@ -35,7 +42,7 @@ export default function ProjectsArt () {
                 types: [4]
             },
             coverImage: {
-                url: '/images/works/the_lone_survivor.png',
+                url: artTheLoneSurvivor,
                 alt: 'A man stands in the quiet streets of dismay'
             },
             link: {
@@ -48,7 +55,7 @@ export default function ProjectsArt () {
                 types: [4]
             },
             coverImage: {
-                url: '/images/works/series_late_night_drive_thru.png',
+                url: artSeries1,
                 alt: 'A parked red sedan sits outside of a donut shop at night'
             },
             link: {
@@ -61,7 +68,7 @@ export default function ProjectsArt () {
                 types: [4]
             },
             coverImage: {
-                url: '/images/works/series_a_new_dawn.png',
+                url: artSeries2,
                 alt: 'A man stands on a pier gazing at the rising sun'
             },
             link: {
@@ -74,7 +81,7 @@ export default function ProjectsArt () {
                 types: [4]
             },
             coverImage: {
-                url: '/images/works/combinedcreature.png',
+                url: artDelephummingfly,
                 alt: 'A hummingbird with the head of an elephant, wings of a butterfly, and deer horns'
             },
             link: {
@@ -87,7 +94,7 @@ export default function ProjectsArt () {
                 types: [3]
             },
             coverImage: {
-                url: '/images/works/clear_skies.jpg',
+                url: photoClearSkies,
                 alt: 'The branches of a tree intercept a lone cloud in the bright blue skies'
             },
             link: {
