@@ -17,12 +17,12 @@ export default function ProjectCarousel({ data }) {
         parent.style['transform'] = 'translateX(' + (((window.innerWidth/2) - 96 - totalSpacing - (slide * slideWidth) - (slideWidth/2))) + 'px)' // god help me
 
         for (let i = 0; i < slideNav.length; i++) {
-            slideNav[i].className = defaultSlideNavStyle + ' w-2 opacity-40'
+            slideNav[i].className = defaultSlideNavStyle + ' w-2 opacity-30 hover:opacity-50'
         }
         slideNav[slide].className = defaultSlideNavStyle + ' w-6 opacity-80'
 
         for (let i = 0; i < slides.length; i++) {
-            slides[i].className = defaultSlideStyle + ' opacity-50 shadow-lg'
+            slides[i].className = defaultSlideStyle + ' opacity-40 hover:opacity-50 shadow-lg cursor-pointer'
         }
         slides[slide].className = defaultSlideStyle + ' opacity-100 shadow-xl'
     }, [slide])
