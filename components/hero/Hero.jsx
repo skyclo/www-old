@@ -20,7 +20,7 @@ export default function Hero() {
         'Me.sayHelloWorld()'
     ]
     return (
-        <header className="flex row px-4 lg:px-12 xl:px-24 mx-auto h-screen -mt-12">
+        <header className="flex row px-4 lg:px-12 xl:px-24 2xl:px-0 mx-auto w-full 2xl:max-w-7xl h-screen -mt-12">
             <div className="flex flex-col my-auto mx-auto lg:ml-0 lg:mr-auto">
                 <h1
                     className="mx-auto animate-fadeupwards font-sans text-center lg:text-left text-4xl md:text-5xl font-extrabold tracking-tight text-transparent bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text">
