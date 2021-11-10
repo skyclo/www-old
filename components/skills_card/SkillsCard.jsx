@@ -5,7 +5,6 @@ export default function SkillsCard ({data}) {
     for (let i = 0; i < 5; i++) {
         stars[i] = (i < data.stars)
     }
-    console.log(stars)
     return (
         <div className="flex flex-col px-8 py-8 ring-1 ring-gray-500 ring-opacity-20 rounded-lg">
             <h3 className="mb-2 font-sans font-semibold text-xl text-left leading-none text-gray-950">{data.skillName}</h3>

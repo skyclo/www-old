@@ -96,7 +96,7 @@ export default function About() {
                         }
                     </div>
                 </div>
-                <div className="grid grid-flow-row auto-cols-fr auto-rows-min grid-cols-1 lg:grid-cols-2 lg:grid-flow-col w-full px-24 py-16 gap-x-0 lg:gap-x-24 gap-y-32 lg:gap-y-0">
+                <div className="grid grid-flow-row auto-cols-fr auto-rows-min grid-cols-1 lg:grid-cols-2 lg:grid-flow-col w-full px-24 py-16 gap-x-0 lg:gap-x-24 gap-y-16 lg:gap-y-0">
                     <div class="flex flex-col w-full space-y-16">
                         <div class="flex flex-col w-full">
                             <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-gray-950">Relevant Coursework</h2>
@@ -158,7 +158,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                
+
                 <Footer/>
             </body>
         </>
