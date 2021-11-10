@@ -15,7 +15,7 @@ export default function CallToAction ({data}) {
                         return (
                             <a
                                 target="_blank"
-                                href="https://github.com/skyclo"
+                                href={button.url}
                                 className="flex flex-row flex-shrink-0 h-min mt-4 mx-auto px-8 py-3 bg-transparent border-2 border-gray-50 w-max rounded-md text-sans text-gray-50 font-semibold text-sm"
                             >
                                 <IconComponent className="w-4 h-4 my-auto" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>

@@ -75,11 +75,13 @@ export default function Contact() {
                     buttons: [
                         {
                             icon: 'Mail',
-                            text: 'Email'
+                            text: 'Email',
+                            url: 'mailto:hello@skyclo.dev'
                         },
                         {
                             icon: 'Phone',
-                            text: 'Telephone/SMS'
+                            text: 'Telephone/SMS',
+                            url: 'tel:6672176172'
                         }
                     ]
                 }}/>
@@ -93,7 +95,7 @@ export default function Contact() {
                                 name: 'GitHub',
                                 color: '#181717'
                             },
-                            url: 'https://github.com/skyclo/skyclo-www'
+                            url: 'https://github.com/skyclo/skyclo-www/issues'
                         }}/>
                         <WideCard data={{
                             name: 'Report an Issue with the Server',
@@ -102,7 +104,7 @@ export default function Contact() {
                                 name: 'GitHub',
                                 color: '#181717'
                             },
-                            url: 'https://github.com/skyclo/kraken-hardware'
+                            url: 'https://github.com/skyclo/kraken-hardware/issues'
                         }}/>
                     </div>
                 </div>

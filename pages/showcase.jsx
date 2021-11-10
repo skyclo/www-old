@@ -50,7 +50,8 @@ export default function Showcase() {
                     buttons: [
                         {
                             text: 'View Profile',
-                            icon: 'GitHub'
+                            icon: 'GitHub',
+                            url: 'https://github.com/skyclo'
                         },
                     ]
                 }}/>
