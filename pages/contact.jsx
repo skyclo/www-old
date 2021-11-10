@@ -60,7 +60,7 @@ export default function Contact() {
                 <NavigationBar/>
                 <Header headerName="Contact" colorFrom="purple-400" colorTo="blue-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
-                    <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Socials</h2>
+                    <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Socials</h2>
                     <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                         {
                             data.map((profile, i, arr) => {
@@ -86,7 +86,7 @@ export default function Contact() {
                     ]
                 }}/>
                 <div className="flex flex-col w-full px-24 py-16">
-                    <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Problems?</h2>
+                    <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Problems?</h2>
                     <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                         <WideCard data={{
                             name: 'Report an Issue with the Site',
