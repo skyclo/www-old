@@ -46,6 +46,12 @@ export default function ProjectArtCard ({data}) {
                                             Digital Artwork
                                         </div>
                                     )
+                                case 5:
+                                    return (
+                                        <div className="px-1.5 py-1 rounded-full w-max font-sans font-bold tracking-wide text-center text-2xs text-pink-900 bg-pink-200">
+                                            Branding
+                                        </div>
+                                    )
                             }
                         })
                     }
