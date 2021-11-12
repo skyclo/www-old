@@ -4,6 +4,7 @@ export default function ProjectArtCard ({data}) {
     return (
         <div
             className="relative group flex flex-col transform scale-100 hover:scale-105 w-full mb-6 bg-black rounded-lg ring-1 ring-gray-500 ring-opacity-20 shadow-lg hover:shadow-2xl cursor-pointer"
+            id={'project-art-card-' + data.info.id}
             onClick={(e) => {
                 e.preventDefault()
                 window.location.href = data.link.url
