@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import HeadMetaTags from '../components/meta/Meta'
-import NavigationBar from '../components/navigation/NavigationBar'
+import HeadMetadata from '../components/HeadMetadata'
+import Navbar from '../components/Navbar/Navbar'
 import Image from 'next/image'
 import errorImage from './../public/images/error_tv.webp'
 
@@ -18,9 +18,9 @@ export default function Custom404Page () {
 
     return (
         <>
-            <HeadMetaTags pageTitle="Error: Not Found"/>
+            <HeadMetadata pageTitle="Error: Not Found"/>
             <body className="h-screen w-screen bg-gray-950 overflow-x-hidden">
-                <NavigationBar/>
+                <Navbar/>
                 <main className="flex flex-col h-full w-full bg-gray-950 -mt-12">
                     <div className="mx-auto my-auto">
                         <div className="relative mx-auto w-48 h-auto">

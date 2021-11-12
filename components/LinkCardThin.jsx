@@ -1,6 +1,6 @@
 import * as Icon from 'react-feather'
 
-export default function WideCard({data}) {
+export default function LinkCardThin({data}) {
     let IconComponent = Icon[data.icon.name]
     return (
         <a target="_blank" href={data.url} className="flex flex-row flex-grow px-8 py-8 w-full bg-gray-50 ring-1 ring-gray-500 ring-opacity-20 shadow-md hover:shadow-lg rounded-lg">

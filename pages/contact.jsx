@@ -1,9 +1,9 @@
-import NavigationBar from '../components/navigation/NavigationBar'
-import HeadMetaTags from '../components/meta/Meta'
-import Header from '../components/header/Header'
-import WideCard from '../components/contact_card/WideCard'
-import CallToAction from '../components/cta/CallToAction'
-import Footer from '../components/footer/Footer'
+import Navbar from '../components/Navbar/Navbar'
+import HeadMetadata from '../components/HeadMetadata'
+import HeaderLarge from '../components/HeaderLarge'
+import LinkCardThin from '../components/LinkCardThin'
+import CallToAction from '../components/CallToAction'
+import Footer from '../components/Footer'
 
 export default function Contact() {
     let data = [
@@ -55,17 +55,17 @@ export default function Contact() {
     ]
     return (
         <>
-            <HeadMetaTags pageTitle="Contact"/>
+            <HeadMetadata pageTitle="Contact"/>
             <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
-                <NavigationBar/>
-                <Header headerName="Contact" colorFrom="purple-400" colorTo="blue-400"/>
+                <Navbar/>
+                <HeaderLarge headerName="Contact" colorFrom="purple-400" colorTo="blue-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
                         <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Socials</h2>
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                             {
                                 data.map((profile, i, arr) => {
-                                    return (<WideCard data={profile}/>)
+                                    return (<LinkCardThin data={profile}/>)
                                 })
                             }
                         </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
                         <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Problems?</h2>
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
-                            <WideCard data={{
+                            <LinkCardThin data={{
                                 name: 'Report an Issue with the Site',
                                 subtitle: 'skyclo-www:skyclo.dev Issue Tracker',
                                 icon: {
@@ -100,7 +100,7 @@ export default function Contact() {
                                 },
                                 url: 'https://github.com/skyclo/skyclo-www/issues'
                             }}/>
-                            <WideCard data={{
+                            <LinkCardThin data={{
                                 name: 'Report an Issue with the Server',
                                 subtitle: 'kraken:skyclo.dev Issue Tracker',
                                 icon: {

@@ -1,70 +1,70 @@
-import NavigationBar from '../components/navigation/NavigationBar'
-import HeadMetaTags from '../components/meta/Meta'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
-import SkillsCard from '../components/skills_card/SkillsCard'
+import Navbar from '../components/Navbar/Navbar'
+import HeadMetadata from '../components/HeadMetadata'
+import HeaderLarge from '../components/HeaderLarge'
+import Footer from '../components/Footer'
+import RatingsCardThin from '../components/RatingsCardThin'
 
 export default function About() {
     let skillsData = [
         {
-            skillName: 'Teamwork and FOSS Project Management',
+            name: 'Teamwork and FOSS Project Management',
             stars: 5,
-            rankName: 'Experienced',
+            rating: 'Experienced',
         },
         {
-            skillName: 'HTML, CSS, JavaScript',
+            name: 'HTML, CSS, JavaScript',
             stars: 5,
-            rankName: 'Proficient',
+            rating: 'Proficient',
         },
         {
-            skillName: 'User Interface and User Experience (UI/UX) Design',
+            name: 'User Interface and User Experience (UI/UX) Design',
             stars: 5,
-            rankName: 'Experienced',
+            rating: 'Experienced',
         },
         {
-            skillName: 'NodeJS',
+            name: 'NodeJS',
             stars: 5,
-            rankName: 'Proficient',
+            rating: 'Proficient',
         },
         {
-            skillName: 'MongoDB',
+            name: 'MongoDB',
             stars: 4,
-            rankName: 'Advanced',
+            rating: 'Advanced',
         },
         {
-            skillName: 'CI, Deployments, Linux Server Management',
+            name: 'CI, Deployments, Linux Server Management',
             stars: 3,
-            rankName: 'Intermediate',
+            rating: 'Intermediate',
         },
         {
-            skillName: 'Git Version Control and GitHub',
+            name: 'Git Version Control and GitHub',
             stars: 4,
-            rankName: 'Advanced',
+            rating: 'Advanced',
         },
         {
-            skillName: 'Docker Container Managemnet',
+            name: 'Docker Container Managemnet',
             stars: 3,
-            rankName: 'Intermediate',
+            rating: 'Intermediate',
         },
         {
-            skillName: 'SQL Databases',
+            name: 'SQL Databases',
             stars: 3,
-            rankName: 'Intermediate',
+            rating: 'Intermediate',
         },
         {
-            skillName: 'ReactJS and Next.js',
+            name: 'ReactJS and Next.js',
             stars: 2,
-            rankName: 'Beginner',
+            rating: 'Beginner',
         },
         {
-            skillName: 'Web Assembly (WASM) and Web Assembly System Interface (WASI)',
+            name: 'Web Assembly (WASM) and Web Assembly System Interface (WASI)',
             stars: 1,
-            rankName: 'Learning...',
+            rating: 'Learning...',
         },
         {
-            skillName: 'Kubernetes and Distributed Computing',
+            name: 'Kubernetes and Distributed Computing',
             stars: 1,
-            rankName: 'Learning...',
+            rating: 'Learning...',
         },
     ]
 
@@ -72,10 +72,10 @@ export default function About() {
 
     return (
         <>
-            <HeadMetaTags pageTitle="About"/>
+            <HeadMetadata pageTitle="About"/>
             <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
-                <NavigationBar/>
-                <Header headerName="About" colorFrom="green-400" colorTo="cyan-400"/>
+                <Navbar/>
+                <HeaderLarge headerName="About" colorFrom="green-400" colorTo="cyan-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
                         <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">About Me</h2>
@@ -93,7 +93,7 @@ export default function About() {
                             {
                                 skillsData.map((skill, i, arr) => {
                                     return (
-                                        <SkillsCard data={skill}/>
+                                        <RatingsCardThin data={skill}/>
                                     )
                                 })
                             }

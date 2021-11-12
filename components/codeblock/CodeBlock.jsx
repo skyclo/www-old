@@ -1,4 +1,4 @@
-import CodeLine from './CodeLine'
+import CodeBlockLine from './CodeBlockLine'
 import Highlight from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 
@@ -17,7 +17,7 @@ export default function CodeBlock ({code, output}) {
             <div className="grid grid-flow-row bg-transparent space-y-0 mt-2 mb-4">
                 {
                     highlightedCode.map((value, index, array) => {
-                        return <CodeLine line={index} code={{__html: "<pre>" + value + "</pre>"}}/>
+                        return <CodeBlockLine line={index} code={{__html: "<pre>" + value + "</pre>"}}/>
                     })
                 }
             </div>

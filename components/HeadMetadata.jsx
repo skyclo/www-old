@@ -1,7 +1,7 @@
 import { useRouter } from "next/dist/client/router"
 import Head from "next/head"
 
-export default function HeadMetaTags ({pageTitle}) {
+export default function HeadMetadata ({pageTitle}) {
     const { query } = useRouter()
 
     if (pageTitle) pageTitle = ' | ' + pageTitle

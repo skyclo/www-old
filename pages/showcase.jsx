@@ -1,48 +1,48 @@
-import HeadMetaTags from '../components/meta/Meta'
-import NavigationBar from '../components/navigation/NavigationBar'
-import Header from '../components/header/Header'
-import ProjectCarousel from '../components/projects_carousel/ProjectCarousel'
-import IdeoxanProjectCarousel from '../components/projects_carousel/items/Ideoxan'
-import SerenadeProjectCarousel from '../components/projects_carousel/items/Serenade'
-import SCDLProjectCarousel from '../components/projects_carousel/items/SCDL'
-import SkoshProjectCarousel from '../components/projects_carousel/items/Skosh'
-import CallToAction from '../components/cta/CallToAction'
-import Footer from '../components/footer/Footer'
-import ProjectsArt from '../components/projects_art/ProjectsArt'
+import HeadMetadata from '../components/HeadMetadata'
+import Navbar from '../components/Navbar/Navbar'
+import HeaderLarge from '../components/HeaderLarge'
+import ProjectCarousel from '../components/ProjectsPage/Projects/ProjectCarousel'
+import ProjectCarouselSlideIdeoxan from '../components/ProjectsPage/Projects/ProjectCarouselSlideIdeoxan'
+import ProjectCarouselSlideSerenade from '../components/ProjectsPage/Projects/ProjectCarouselSlideSerenade'
+import ProjectCarouselSlideSCDL from '../components/ProjectsPage/Projects/ProjectCarouselSlideSCDL'
+import ProjectCarouselSlideSkosh from '../components/ProjectsPage/Projects/ProjectCarouselSlideSkosh'
+import CallToAction from '../components/CallToAction'
+import Footer from '../components/Footer'
+import ArtSection from '../components/ProjectsPage/Art/Art'
 
 export default function Showcase() {
     let projectsData = [
         {
             name: "Ideoxan",
             objects: {
-                Component: IdeoxanProjectCarousel
+                Component: ProjectCarouselSlideIdeoxan
             }
         },
         {
             name: "Serenade",
             objects: {
-                Component: SerenadeProjectCarousel
+                Component: ProjectCarouselSlideSerenade
             }
         },
         {
             name: "SCDL",
             objects: {
-                Component: SCDLProjectCarousel
+                Component: ProjectCarouselSlideSCDL
             }
         },
         {
             name: "Skosh",
             objects: {
-                Component: SkoshProjectCarousel
+                Component: ProjectCarouselSlideSkosh
             }
         },
     ]
     return (
         <>
-            <HeadMetaTags pageTitle="Showcase"/>
+            <HeadMetadata pageTitle="Showcase"/>
             <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
-                <NavigationBar/>
-                <Header headerName="Showcase" colorFrom="orange-400" colorTo="yellow-400"/>
+                <Navbar/>
+                <HeaderLarge headerName="Showcase" colorFrom="orange-400" colorTo="yellow-400"/>
                 <ProjectCarousel data={projectsData}/>
                 <CallToAction data={{
                     title: 'Something Missing?',
@@ -55,7 +55,7 @@ export default function Showcase() {
                         },
                     ]
                 }}/>
-                <ProjectsArt/>
+                <ArtSection/>
                 <Footer/>
             </body>
         </>

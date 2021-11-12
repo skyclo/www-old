@@ -1,9 +1,9 @@
 import * as Icon from 'react-feather'
-import CodeBlock from '../codeblock/CodeBlock'
+import CodeBlock from '../CodeBlock/CodeBlock'
 import Image from 'next/image'
 import heroBlurImage from './../../public/images/hero_glow1.webp'
 
-export default function Hero() {
+export default function IndexPageHero() {
     let code = [
         'class Conor {',
         '\tconstructor() {',

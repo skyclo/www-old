@@ -1,5 +1,5 @@
 
-export default function Header({headerName, colorFrom, colorTo}) {
+export default function HeaderLarge({headerName, colorFrom, colorTo}) {
     return (
         <header className="w-full h-1/4 md:h-1/3 lg:h-1/2 -mt-12 bg-gray-950 pb-12">
             <div className="flex flex-col w-full h-full px-4 lg:px-12 xl:px-24">

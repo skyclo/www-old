@@ -1,16 +1,16 @@
-import ProjectArtCard from "./ProjectArtCard"
-import spotifyRedesignImage from './../../public/images/works/spotify_redesign.jpeg'
-import artNewKerbinImage from './../../public/images/works/new_kerbin.png'
-import artTheLoneSurvivor from './../../public/images/works/the_lone_survivor.png'
-import artSeries1 from './../../public/images/works/series_late_night_drive_thru.png'
-import artSeries2 from './../../public/images/works/series_a_new_dawn.png'
-import artDelephummingfly from './../../public/images/works/combinedcreature.png'
-import photoClearSkies from './../../public/images/works/clear_skies.jpg'
-import amdRedesignImage from './../../public/images/works/amd_redesign.png'
-import skycloBrandingV2 from './../../public/images/works/skyclo_branding_logo_v2.png'
-import discordUIOverhaul from './../../public/images/works/discord_redesign_ui.png'
-import amazonWebsiteRedo2 from './../../public/images/works/amazon_website_redo.png'
-import ProjectArtFilterPill from "./ProjectArtFilterPill"
+import ProjectArtCard from "./ArtCard"
+import spotifyRedesignImage from './../../../public/images/works/spotify_redesign.jpeg'
+import artNewKerbinImage from './../../../public/images/works/new_kerbin.png'
+import artTheLoneSurvivor from './../../../public/images/works/the_lone_survivor.png'
+import artSeries1 from './../../../public/images/works/series_late_night_drive_thru.png'
+import artSeries2 from './../../../public/images/works/series_a_new_dawn.png'
+import artDelephummingfly from './../../../public/images/works/combinedcreature.png'
+import photoClearSkies from './../../../public/images/works/clear_skies.jpg'
+import amdRedesignImage from './../../../public/images/works/amd_redesign.png'
+import skycloBrandingV2 from './../../../public/images/works/skyclo_branding_logo_v2.png'
+import discordUIOverhaul from './../../../public/images/works/discord_redesign_ui.png'
+import amazonWebsiteRedo2 from './../../../public/images/works/amazon_website_redo.png'
+import ProjectArtFilterPill from "./ArtFilterPill"
 import { useEffect, useState } from "react"
 
 export default function ProjectsArt () {
