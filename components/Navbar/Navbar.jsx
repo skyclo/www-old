@@ -17,16 +17,28 @@ export default function Navbar() {
             <div className="ml-auto my-auto">
                 <ul className="flex flex-row space-x-1 md:space-x-2 lg:space-x-4 2xl:space-x-6">
                     <li>
-                        <NavbarButton page="/" pageName="Home"/>
+                        <NavbarButton
+                            url="/"
+                            name="Home"
+                        />
                     </li>
                     <li>
-                        <NavbarButton page="/showcase" pageName="Showcase"/>
+                        <NavbarButton
+                            url="/showcase"
+                            name="Showcase"
+                        />
                     </li>
                     <li>
-                        <NavbarButton page="/about" pageName="About"/>
+                        <NavbarButton
+                            url="/about"
+                            name="About"
+                        />
                     </li>
                     <li>
-                        <NavbarButton page="/contact" pageName="Contact"/>
+                        <NavbarButton
+                            url="/contact"
+                            name="Contact"
+                        />
                     </li>
                 </ul>
             </div>
