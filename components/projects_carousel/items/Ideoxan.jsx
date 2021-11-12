@@ -10,7 +10,7 @@ export default function IdeoxanProjectCarousel () {
                     <h3 className="my-auto ml-2 font-sans text-gray-50 font-bold text-3xl">ideoxan</h3>
                 </div>
                 <p className="mt-2 mx-auto lg:mx-0 pr-0 lg:pr-2 font-sans text-gray-200 font-medium text-normal text-center lg:text-left">Empowering the next generation of programmers, makers, and inventors.</p>
-                <a href="https://ideoxan.com" className="mt-4 mx-auto lg:mx-0 px-8 py-3 bg-purple-600 w-max rounded-md text-sans text-purple-100 font-semibold text-sm shadow-sm ring-1 ring-purple-50 ring-opacity-20">
+                <a href="https://ideoxan.com" className="mt-4 mx-auto lg:mx-0 px-8 py-3 bg-purple-600 hover:bg-purple-500 w-max rounded-md text-sans text-purple-100 font-semibold text-sm shadow-sm hover:shadow-lg ring-1 ring-purple-50 ring-opacity-20">
                     Learn More
                 </a>
             </div>
