@@ -247,27 +247,29 @@ export default function ProjectsArt () {
 
     return (
         <div className="flex flex-col w-full px-24 py-16">
-            <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Art, Photography and Designs</h2>
-            <div className="animate-fadeupwards flex flex-row mx-auto mt-8 mb-2 space-x-2 font-sans font-semibold text-sm text-center">
-                {
-                    artProjectPills.map((pillData, i) => {
-                        return (
-                            <ProjectArtFilterPill
-                                filterID={i+1}
-                                setParentFilter={setCurrentFilter}
-                                name={pillData.name}
-                                color={pillData.color}
-                            />
-                        )
-                    })
-                }
-            </div>
-            <div className="animate-fadeupwards masonry-col-1 md:masonry-col-2 lg:masonry-col-3 xl:masonry-col-4 2xl:masonry-col-5 before:box-inherit after:box-inherit mt-8 gap-x-4 gap-y-6">
-                {
-                    artProjectData.map((data, i, array) => {
-                        return <ProjectArtCard data={data}/>
-                    })
-                }
+            <div className="flex flex-col mx-auto w-full max-w-7xl">
+                <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Art, Photography and Designs</h2>
+                <div className="animate-fadeupwards flex flex-row mx-auto mt-8 mb-2 space-x-2 font-sans font-semibold text-sm text-center">
+                    {
+                        artProjectPills.map((pillData, i) => {
+                            return (
+                                <ProjectArtFilterPill
+                                    filterID={i+1}
+                                    setParentFilter={setCurrentFilter}
+                                    name={pillData.name}
+                                    color={pillData.color}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                <div className="animate-fadeupwards masonry-col-1 md:masonry-col-2 lg:masonry-col-3 xl:masonry-col-4 before:box-inherit after:box-inherit mt-8 gap-x-4 gap-y-6">
+                    {
+                        artProjectData.map((data, i, array) => {
+                            return <ProjectArtCard data={data}/>
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
