@@ -1,14 +1,14 @@
 import HeadMetadata from '../components/HeadMetadata'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/navbar/Navbar'
 import HeaderLarge from '../components/HeaderLarge'
-import ProjectCarousel from '../components/ProjectsPage/Projects/ProjectCarousel'
-import ProjectCarouselSlideIdeoxan from '../components/ProjectsPage/Projects/ProjectCarouselSlideIdeoxan'
-import ProjectCarouselSlideSerenade from '../components/ProjectsPage/Projects/ProjectCarouselSlideSerenade'
-import ProjectCarouselSlideSCDL from '../components/ProjectsPage/Projects/ProjectCarouselSlideSCDL'
-import ProjectCarouselSlideSkosh from '../components/ProjectsPage/Projects/ProjectCarouselSlideSkosh'
+import ProjectCarousel from '../components/showcase_page/projects_section/ProjectCarousel'
+import ProjectCarouselSlideIdeoxan from '../components/showcase_page/projects_section/ProjectCarouselSlideIdeoxan'
+import ProjectCarouselSlideSerenade from '../components/showcase_page/projects_section/ProjectCarouselSlideSerenade'
+import ProjectCarouselSlideSCDL from '../components/showcase_page/projects_section/ProjectCarouselSlideSCDL'
+import ProjectCarouselSlideSkosh from '../components/showcase_page/projects_section/ProjectCarouselSlideSkosh'
 import CallToAction from '../components/CallToAction'
 import Footer from '../components/Footer'
-import ArtSection from '../components/ProjectsPage/Art/Art'
+import ArtSection from '../components/showcase_page/art_section/Art'
 
 export default function Showcase() {
     let projectsData = [

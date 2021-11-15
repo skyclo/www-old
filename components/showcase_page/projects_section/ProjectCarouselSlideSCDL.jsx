@@ -1,4 +1,4 @@
-import CodeBlock from "../../CodeBlock/CodeBlock"
+import CodeBlock from "../../code_block/CodeBlock"
 
 export default function SCDLProjectCarousel () {
     let code = [

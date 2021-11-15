@@ -1,6 +1,6 @@
-import Navbar from '../components/Navbar/Navbar'
-import IndexPageHero from '../components/IndexPage/IndexPageHero'
-import IntroductionAnimation from '../components/IndexPage/IntroductionAnimation'
+import Navbar from '../components/navbar/Navbar'
+import IndexPageHero from '../components/index_page/IndexPageHero'
+import IntroductionAnimation from '../components/index_page/IntroductionAnimation'
 import HeadMetadata from '../components/HeadMetadata'
 
 export default function Home() {

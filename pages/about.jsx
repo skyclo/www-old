@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/navbar/Navbar'
 import HeadMetadata from '../components/HeadMetadata'
 import HeaderLarge from '../components/HeaderLarge'
 import Footer from '../components/Footer'
