@@ -51,12 +51,72 @@
         }
     }
 
+    .hljs {
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+
     * {
         @apply transition-all duration-300 ease-in-out delay-75;
     }
 
-    .hljs {
-        background-color: transparent !important;
-        padding: 0 !important;
+    .container-full-screen {
+        @apply flex flex-col h-screen w-screen overflow-x-hidden;
+    }
+
+    .container-full-width {
+        @apply flex flex-col h-auto w-full;
+    }
+
+    .container-padding-normal {
+        @apply px-24 py-16;
+    }
+
+    .content-max {
+        @apply mx-auto w-full max-w-7xl;
+    }
+
+    .bg-dark {
+        @apply bg-gray-950;
+    }
+
+    .bg-light {
+        @apply bg-gray-50;
+    }
+
+    .text-h2 {
+        @apply animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight;
+    }
+
+    .text-dark {
+        @apply text-gray-950;
+    }
+
+    .text-light {
+        @apply text-gray-50;
+    }
+
+    .text-dark-disabled {
+        @apply text-gray-400;
+    }
+
+    .text-light-disabled {
+        @apply text-gray-600;
+    }
+
+    .text-dark-grayed-out {
+        @apply text-gray-600;
+    }
+
+    .text-light-grayed-out {
+        @apply text-gray-400;
+    }
+
+    .text-light-body {
+        @apply text-gray-200;
+    }
+
+    .text-dark-body {
+        @apply text-gray-700;
     }
 }

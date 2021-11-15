@@ -73,12 +73,12 @@ export default function About() {
     return (
         <>
             <HeadMetadata pageTitle="About"/>
-            <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
+            <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
                 <HeaderLarge headerName="About" colorFrom="green-400" colorTo="cyan-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
-                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">About Me</h2>
+                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-dark">About Me</h2>
                         <div className="animate-fadeupwards flex flex-col mt-8 mx-auto max-w-3xl w-full font-sans font-normal text-justify space-y-2 md:space-y-4 text-gray-700">
                             <p>My name is Conor Daly, a college student attending the University of Central Florida. I am a computer enthusiast focused on advancing my programming skills, giving back to the community, and improving the world one line at a time.</p>
 
@@ -88,7 +88,7 @@ export default function About() {
                 </div>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
-                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Skills</h2>
+                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-dark">Skills</h2>
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-cols-fr auto-rows-min mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                             {
                                 skillsData.map((skill, i, arr) => {
@@ -104,7 +104,7 @@ export default function About() {
                     <div className="grid grid-flow-row auto-cols-fr auto-rows-min grid-cols-1 lg:grid-cols-2 lg:grid-flow-col mx-auto w-full max-w-7xl">
                         <div class="flex flex-col w-full space-y-16">
                             <div class="flex flex-col w-full">
-                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-gray-950">Relevant Coursework</h2>
+                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Relevant Coursework</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
                                         <li>Intro to Programming with C</li>
@@ -117,7 +117,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div class="flex flex-col w-full">
-                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-gray-950">Clubs and Involvement</h2>
+                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Clubs and Involvement</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
                                         <li>Knight Hacks 2021 Project Team 12</li>
@@ -134,7 +134,7 @@ export default function About() {
                         </div>
                         <div class="flex flex-col w-full space-y-16">
                         <div class="flex flex-col w-full">
-                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-gray-950">Certifications</h2>
+                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Certifications</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
                                         <li>NCS-100 Modeling and Simulation Certification</li>
@@ -145,7 +145,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div class="flex flex-col w-full">
-                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-gray-950">Awards and Recognition</h2>
+                                <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Awards and Recognition</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
                                         <li>2021 AP Scholar with Distinction</li>

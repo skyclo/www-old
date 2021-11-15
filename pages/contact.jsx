@@ -56,12 +56,12 @@ export default function Contact() {
     return (
         <>
             <HeadMetadata pageTitle="Contact"/>
-            <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
+            <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
                 <HeaderLarge headerName="Contact" colorFrom="purple-400" colorTo="blue-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
-                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Socials</h2>
+                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-dark">Socials</h2>
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                             {
                                 data.map((profile, i, arr) => {
@@ -89,7 +89,7 @@ export default function Contact() {
                 }}/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
-                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-gray-950">Problems?</h2>
+                        <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight text-dark">Problems?</h2>
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                             <LinkCardThin data={{
                                 name: 'Report an Issue with the Site',

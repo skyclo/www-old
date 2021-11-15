@@ -4,8 +4,8 @@ import { useEffect, useState } from "react"
 export default function ProjectCarousel({ data }) {
     const [slide, setSlide] = useState(0)
 
-    let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-gray-950 cursor-pointer'
-    let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full mr-12 bg-gray-950 rounded-2xl ring-1 ring-gray-500 ring-opacity-20"
+    let defaultSlideNavStyle = 'slide-selector h-2 rounded-full bg-dark cursor-pointer'
+    let defaultSlideStyle = "project-carousel overflow-hidden relative flex flex-row flex-shrink-0 w-full xl:w-3/4 2xl:w-1/2 h-full mr-12 bg-dark rounded-2xl ring-1 ring-gray-500 ring-opacity-20"
 
     useEffect(() => {
         let slides = document.getElementsByClassName('project-carousel')
@@ -28,8 +28,8 @@ export default function ProjectCarousel({ data }) {
     }, [slide])
 
     return (
-        <div className="animate-fadeupwards flex flex-col w-full px-24 py-16">
-            <h2 className="mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Projects</h2>
+        <div className="animate-fadeupwards container-full-width container-padding-normal">
+            <h2 className="text-h2">Projects</h2>
             <div className="flex flex-row mt-8 h-72 lg:h-120 w-full overflow-x-visible">
                 {
                     data.map((item, i) => {

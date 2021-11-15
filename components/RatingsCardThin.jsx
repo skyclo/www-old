@@ -7,7 +7,7 @@ export default function RatingsCardThin ({data}) {
     }
     return (
         <div className="flex flex-col px-8 py-8 ring-1 ring-gray-500 ring-opacity-20 rounded-lg">
-            <h3 className="mb-2 font-sans font-semibold text-xl text-left leading-none text-gray-950">{data.name}</h3>
+            <h3 className="mb-2 font-sans font-semibold text-xl text-left leading-none text-dark">{data.name}</h3>
             <div className="flex flex-row space-x-2 mt-auto">
                 {
                     stars.map((starData, i, arr) => {
@@ -17,14 +17,14 @@ export default function RatingsCardThin ({data}) {
                             )
                         } else {
                             return (
-                                <Icon.Star className="my-auto w-4 h-4 text-gray-400" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+                                <Icon.Star className="my-auto w-4 h-4 text-light-grayed-out" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" stroke="currentColor" stroke-width="2"/>
                             )
                         }
 
                     })
                 }
 
-                <div className="pl-2 font-sans font-normal text-sm my-auto text-left text-gray-600">{data.rating}</div>
+                <div className="pl-2 font-sans font-normal text-sm my-auto text-left text-light-grayed-out">{data.rating}</div>
             </div>
         </div>
     )

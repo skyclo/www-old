@@ -40,7 +40,7 @@ export default function Showcase() {
     return (
         <>
             <HeadMetadata pageTitle="Showcase"/>
-            <body className="h-screen w-screen bg-gray-50 overflow-x-hidden">
+            <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
                 <HeaderLarge headerName="Showcase" colorFrom="orange-400" colorTo="yellow-400"/>
                 <ProjectCarousel data={projectsData}/>

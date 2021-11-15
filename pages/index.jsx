@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <HeadMetadata pageTitle="Home"/>
-            <body className="h-screen w-screen bg-gray-950 overflow-x-hidden">
+            <body className="container-full-screen bg-dark">
                 <IntroductionAnimation/>
                 <Navbar/>
                 <IndexPageHero/>

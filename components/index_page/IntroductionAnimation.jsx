@@ -12,7 +12,7 @@ export default function IntroductionAnimation () {
     })
 
     if (visible) return (
-        <div className="absolute flex w-screen h-screen bg-gray-950 animate-logobackintro opacity-0">
+        <div className="absolute flex container-full-screen bg-dark animate-logobackintro opacity-0">
             <img src="/images/Skyclo_logo.svg" className="my-auto mx-auto w-48 h-auto animate-logointro opacity-0" alt="Skyclo Branding Logo"/>
             <div className="">
 

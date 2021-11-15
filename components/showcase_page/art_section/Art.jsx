@@ -41,7 +41,7 @@ export default function ProjectsArt () {
     }, [currentFilter])
 
     return (
-        <div className="container-full-width px-24 py-16">
+        <div className="container-full-width container-padding-normal">
             <div className="flex flex-col content-max">
                 <h2 className="text-h2">Art, Photography and Designs</h2>
                 <div className="animate-fadeupwards flex flex-row mx-auto mt-8 mb-2 space-x-2 font-sans font-semibold text-sm text-center">

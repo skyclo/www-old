@@ -30,7 +30,7 @@ function CodeBlockOutput ({output}) {
     if (output) {
         return (
             <div className="border-t-2 border-gray-50 border-opacity-10 w-full px-6 py-3">
-                <div className="flex flex-row font-mono text-left text-medium text-xs space-x-4 text-gray-50">
+                <div className="flex flex-row font-mono text-left text-medium text-xs space-x-4 text-light">
                     <p>$</p>
                     <p className="text-green-500">{output}</p>
                 </div>
