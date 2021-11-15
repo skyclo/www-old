@@ -24,7 +24,7 @@ export default function RatingsCardThin ({data}) {
                     })
                 }
 
-                <div className="pl-2 font-sans font-normal text-sm my-auto text-left text-light-grayed-out">{data.rating}</div>
+                <div className="pl-2 font-sans font-medium text-sm my-auto text-left text-light-grayed-out">{data.rating}</div>
             </div>
         </div>
     )
