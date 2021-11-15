@@ -1,7 +1,7 @@
 import ProjectArtCard from "./ArtCard"
 import artData from './artData'
 import artPills from './artFilters'
-import ProjectArtFilterPill from "./ArtFilterPill"
+import ArtFilterPill from "./ArtFilterPill"
 import { useEffect, useState } from "react"
 
 export default function ProjectsArt () {
@@ -41,14 +41,14 @@ export default function ProjectsArt () {
     }, [currentFilter])
 
     return (
-        <div className="flex flex-col w-full px-24 py-16">
-            <div className="flex flex-col mx-auto w-full max-w-7xl">
-                <h2 className="animate-fadeupwards mx-auto font-sans font-extrabold text-center text-4xl tracking-tight">Art, Photography and Designs</h2>
+        <div className="container-full-width px-24 py-16">
+            <div className="flex flex-col content-max">
+                <h2 className="text-h2">Art, Photography and Designs</h2>
                 <div className="animate-fadeupwards flex flex-row mx-auto mt-8 mb-2 space-x-2 font-sans font-semibold text-sm text-center">
                     {
                         artPills.map((pillData, i) => {
                             return (
-                                <ProjectArtFilterPill
+                                <ArtFilterPill
                                     filterID={i+1}
                                     setParentFilter={setCurrentFilter}
                                     name={pillData.name}
