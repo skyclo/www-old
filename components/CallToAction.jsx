@@ -1,7 +1,6 @@
 import * as Icon from 'react-feather'
 
 export default function CallToAction ({data}) {
-    console.log(data.buttons.length)
     return (
         <div className="flex w-full py-16 px-24 bg-gray-950">
             <div className="flex flex-col lg:flex-row mx-auto w-full max-w-7xl">
