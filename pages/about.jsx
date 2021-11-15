@@ -1,8 +1,8 @@
-import Navbar from '../components/navbar/Navbar'
-import HeadMetadata from '../components/HeadMetadata'
-import HeaderLarge from '../components/HeaderLarge'
-import Footer from '../components/Footer'
-import RatingsCardThin from '../components/RatingsCardThin'
+import Navbar from './../components/navbar/Navbar'
+import HeadMetadata from './../components/HeadMetadata'
+import HeaderLarge from './../components/HeaderLarge'
+import Footer from './../components/Footer'
+import RatingsCardThin from './../components/RatingsCardThin'
 
 export default function About() {
     let skillsData = [

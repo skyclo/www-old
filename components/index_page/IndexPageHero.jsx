@@ -1,5 +1,5 @@
 import * as Icon from 'react-feather'
-import CodeBlock from '../code_block/CodeBlock'
+import CodeBlock from './../code_block/CodeBlock'
 import Image from 'next/image'
 import heroBlurImage from './../../public/images/hero_glow1.webp'
 

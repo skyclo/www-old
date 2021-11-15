@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import HeadMetadata from '../components/HeadMetadata'
-import Navbar from '../components/navbar/Navbar'
+import HeadMetadata from './../components/HeadMetadata'
+import Navbar from './../components/navbar/Navbar'
 import Image from 'next/image'
 import errorImage from './../public/images/error_tv.webp'
 
