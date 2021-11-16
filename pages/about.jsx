@@ -3,6 +3,7 @@ import HeadMetadata from './../components/HeadMetadata'
 import HeaderLarge from './../components/HeaderLarge'
 import Footer from './../components/Footer'
 import RatingsCardThin from './../components/RatingsCardThin'
+import DevBanner from '../components/DevBanner'
 
 export default function About() {
     let skillsData = [
@@ -75,6 +76,7 @@ export default function About() {
             <HeadMetadata pageTitle="About"/>
             <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
+                <DevBanner/>
                 <HeaderLarge headerName="About" colorFrom="green-400" colorTo="cyan-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">

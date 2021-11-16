@@ -20,6 +20,7 @@ const tailwind_config = {
     extend: {
       fontSize: {
         '2xs': '0.6rem',
+        '3xs': '0.5rem',
       },
       scale: {
         '200': '2',

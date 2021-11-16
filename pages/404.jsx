@@ -3,6 +3,7 @@ import HeadMetadata from './../components/HeadMetadata'
 import Navbar from './../components/navbar/Navbar'
 import Image from 'next/image'
 import errorImage from './../public/images/error_tv.webp'
+import DevBanner from '../components/DevBanner'
 
 export default function Custom404Page () {
 
@@ -21,6 +22,7 @@ export default function Custom404Page () {
             <HeadMetadata pageTitle="Error: Not Found"/>
             <body className="h-screen w-screen bg-dark overflow-x-hidden">
                 <Navbar/>
+                <DevBanner/>
                 <main className="flex flex-col h-full w-full bg-dark -mt-12">
                     <div className="mx-auto my-auto">
                         <div className="relative mx-auto w-48 h-auto">

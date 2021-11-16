@@ -9,6 +9,7 @@ import ProjectCarouselSlideSkosh from './../components/showcase_page/projects_se
 import CallToAction from './../components/CallToAction'
 import Footer from './../components/Footer'
 import ArtSection from './../components/showcase_page/art_section/Art'
+import DevBanner from '../components/DevBanner'
 
 export default function Showcase() {
     let projectsData = [
@@ -42,6 +43,7 @@ export default function Showcase() {
             <HeadMetadata pageTitle="Showcase"/>
             <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
+                <DevBanner/>
                 <HeaderLarge headerName="Showcase" colorFrom="orange-400" colorTo="yellow-400"/>
                 <ProjectCarousel data={projectsData}/>
                 <CallToAction data={{

@@ -4,6 +4,7 @@ import HeaderLarge from './../components/HeaderLarge'
 import LinkCardThin from './../components/LinkCardThin'
 import CallToAction from './../components/CallToAction'
 import Footer from './../components/Footer'
+import DevBanner from '../components/DevBanner'
 
 export default function Contact() {
     let data = [
@@ -58,6 +59,7 @@ export default function Contact() {
             <HeadMetadata pageTitle="Contact"/>
             <body className="h-screen w-screen bg-light overflow-x-hidden">
                 <Navbar/>
+                <DevBanner/>
                 <HeaderLarge headerName="Contact" colorFrom="purple-400" colorTo="blue-400"/>
                 <div className="flex flex-col w-full px-24 py-16">
                     <div className="flex flex-col mx-auto w-full max-w-7xl">
