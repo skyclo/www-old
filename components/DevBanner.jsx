@@ -1,7 +1,7 @@
 let packageInfo = require('./../package.json')
 
 export default function DevBanner () {
-    if (process.env.VERCEL_ENV == 'production' || process.env.NODE_ENV == 'production') return (<></>)
+    if (process.env.NEXT_PUBLIC_VERCEL_ENV == 'production' || process.env.NODE_ENV == 'production') return (<></>)
 
     return (
         <div className="dev-banner-info absolute z-40 top-auto bottom-0 container-full-width py-4 px-3 overflow-hidden">
