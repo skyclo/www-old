@@ -16,8 +16,8 @@ export default function CodeBlock ({code, output}) {
             </div>
             <div className="grid grid-flow-row bg-transparent space-y-0 mt-2 mb-4">
                 {
-                    highlightedCode.map((value, index, array) => {
-                        return <CodeBlockLine line={index} code={{__html: "<pre>" + value + "</pre>"}}/>
+                    highlightedCode.map((value, i, arr) => {
+                        return <CodeBlockLine key={i} line={i} code={{__html: "<pre>" + value + "</pre>"}}/>
                     })
                 }
             </div>
