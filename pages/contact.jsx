@@ -65,7 +65,7 @@ export default function Contact() {
                         <div className="animate-fadeupwards grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-cols-fr auto-rows-fr mt-8 gap-x-2 md:gap-x-6 gap-y-2 md:gap-y-8">
                             {
                                 data.map((profile, i, arr) => {
-                                    return (<LinkCardThin data={profile}/>)
+                                    return (<LinkCardThin key={i} data={profile}/>)
                                 })
                             }
                         </div>
