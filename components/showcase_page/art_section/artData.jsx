@@ -11,7 +11,7 @@ import discordUIOverhaul from './../../../public/images/works/discord_redesign_u
 import amazonWebsiteRedo2 from './../../../public/images/works/amazon_website_redo.png'
 
 // types: 1 (User Interface), 2 (Redesign), 3 (Photography), 4 (Digital Artwork), 5 (Branding)
-export default [
+let artData = [
     {
         info: {
             title: 'Spotify Desktop App UI Redesign',
@@ -178,3 +178,6 @@ export default [
         }
     },
 ]
+
+
+export default artData

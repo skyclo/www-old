@@ -46,9 +46,10 @@ export default function ProjectsArt () {
                 <h2 className="text-h2">Art, Photography and Designs</h2>
                 <div className="animate-fadeupwards flex flex-row mx-auto mt-8 mb-2 space-x-2 font-sans font-semibold text-sm text-center">
                     {
-                        artPills.map((pillData, i) => {
+                        artPills.map((pillData, i, arr) => {
                             return (
                                 <ArtFilterPill
+                                    key={i}
                                     filterID={i+1}
                                     setParentFilter={setCurrentFilter}
                                     name={pillData.name}
@@ -60,8 +61,8 @@ export default function ProjectsArt () {
                 </div>
                 <div className="animate-fadeupwards masonry-col-1 md:masonry-col-2 lg:masonry-col-3 xl:masonry-col-4 before:box-inherit after:box-inherit mt-8 gap-x-4 gap-y-6">
                     {
-                        artData.map((data, i, array) => {
-                            return <ProjectArtCard data={data}/>
+                        artData.map((data, i, arr) => {
+                            return <ProjectArtCard key={i} data={data}/>
                         })
                     }
                 </div>

@@ -1,6 +1,6 @@
 // types: 1 (User Interface), 2 (Redesign), 3 (Photography), 4 (Digital Artwork), 5 (Branding)
 
-export default [
+let artFilters = [
     {
         name: 'User Interface (UI)',
         color: 'green'
@@ -22,3 +22,5 @@ export default [
         color: 'pink'
     },
 ]
+
+export default artFilters
