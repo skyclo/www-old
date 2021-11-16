@@ -1,7 +1,9 @@
 let packageInfo = require('./../package.json')
 
 export default function DevBanner () {
-    if (process.env.NODE_ENV !== 'production') return (
+    if (process.env.VERCEL_ENV == 'production' || process.env.NODE_ENV == 'production') return (<></>)
+
+    return (
         <div className="dev-banner-info absolute z-40 top-auto bottom-0 container-full-width py-4 px-3 overflow-hidden">
             <div className="animate-fadeupwards flex flex-row content-max px-6 py-4 bg-gray-900 rounded-2xl shadow-md">
                 <div className="flex flex-col mr-4 my-auto">
@@ -20,6 +22,4 @@ export default function DevBanner () {
             </div>
         </div>
     )
-
-    return (<></>)
 }
