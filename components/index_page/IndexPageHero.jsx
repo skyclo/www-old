@@ -28,19 +28,19 @@ export default function IndexPageHero() {
                 </h1>
                 <h2 className="mt-2 mx-auto lg:mx-0 animate-fadeupwards font-sans text-center lg:text-left text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-light-grayed-out">Designer, Programmer, Entrepreneur</h2>
                 <div className="flex flex-row mx-auto lg:mx-0 mt-4 animate-fadeupwards space-x-6">
-                    <a target="_blank" href="https://github.com/skyclo">
+                    <a target="_blank" href="https://github.com/skyclo" rel="noreferrer">
                         <Icon.GitHub className="w-4 h-4 text-light opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
-                    <a target="_blank" href="https://twitter.com/skyclo_">
+                    <a target="_blank" href="https://twitter.com/skyclo_" rel="noreferrer">
                         <Icon.Twitter className="w-4 h-4 text-light opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
-                    <a target="_blank" href="https://dribbble.com/skyclo">
+                    <a target="_blank" href="https://dribbble.com/skyclo" rel="noreferrer">
                         <Icon.Dribbble className="w-4 h-4 text-light opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
-                    <a target="_blank" href="https://discordapp.com/users/717468257107574804">
+                    <a target="_blank" href="https://discordapp.com/users/717468257107574804" rel="noreferrer">
                         <Icon.MessageSquare className="w-4 h-4 text-light opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
-                    <a target="_blank" href="https://linkedin.com/in/skyclo">
+                    <a target="_blank" href="https://linkedin.com/in/skyclo" rel="noreferrer">
                         <Icon.Linkedin className="w-4 h-4 text-light opacity-50 hover:opacity-100" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor" stroke-width="2"/>
                     </a>
                 </div>
