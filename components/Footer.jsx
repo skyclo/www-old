@@ -6,7 +6,7 @@ export default function Footer () {
             <div className="animate-fadeupwards px-12 py-14">
                 <h2 className="font-sans font-extrabold tracking-wide text-left text-4xl text-light opacity-30">skyclo</h2>
                 <h3 className="mt-0.5 font-sans font-bold tracking-normal text-left text-xs text-light opacity-30">A Conor Daly Brand</h3>
-                <p className="mt-6 font-sans font-medium text-left text-xs text-light opacity-30">(C) 2018 - 2021</p>
+                <p className="mt-6 font-sans font-medium text-left text-xs text-light opacity-30">&copy; 2018 - 2021</p>
                 <ul className="mt-10 space-y-2">
                     <li className="w-max font-sans font-semibold text-left text-sm text-light opacity-30 hover:opacity-70">
                         <Link href="/">
