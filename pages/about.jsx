@@ -93,7 +93,7 @@ export default function About() {
                             {
                                 skillsData.map((skill, i, arr) => {
                                     return (
-                                        <RatingsCardThin data={skill}/>
+                                        <RatingsCardThin key={i} data={skill}/>
                                     )
                                 })
                             }
@@ -102,8 +102,8 @@ export default function About() {
                 </div>
                 <div className="flex flex-col w-full px-24 py-16 gap-x-0 lg:gap-x-24 gap-y-16 lg:gap-y-0">
                     <div className="grid grid-flow-row auto-cols-fr auto-rows-min grid-cols-1 lg:grid-cols-2 lg:grid-flow-col mx-auto w-full max-w-7xl">
-                        <div class="flex flex-col w-full space-y-16">
-                            <div class="flex flex-col w-full">
+                        <div className="flex flex-col w-full space-y-16">
+                            <div className="flex flex-col w-full">
                                 <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Relevant Coursework</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
@@ -116,13 +116,13 @@ export default function About() {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-full">
+                            <div className="flex flex-col w-full">
                                 <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Clubs and Involvement</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
                                         <li>Knight Hacks 2021 Project Team 12</li>
                                         <li>100+ Hours of Community Service in High School</li>
-                                        <li>Modeling and Simulation Club ("Mod Squad")</li>
+                                        <li>Modeling and Simulation Club (&ldquo;Mod Squad&rdquo;)</li>
                                         <li>FIRST Technical Challenge Robotics Club</li>
                                         <li>Student Government Association</li>
                                         <li>Business Professionals of America</li>
@@ -132,8 +132,8 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full space-y-16">
-                        <div class="flex flex-col w-full">
+                        <div className="flex flex-col w-full space-y-16">
+                        <div className="flex flex-col w-full">
                                 <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Certifications</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
@@ -144,7 +144,7 @@ export default function About() {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-full">
+                            <div className="flex flex-col w-full">
                                 <h2 className="animate-fadeupwards mx-auto lg:mx-0 font-sans font-extrabold text-center lg:text-left text-4xl tracking-tight text-dark">Awards and Recognition</h2>
                                 <div className="animate-fadeupwards flex flex-col mt-8 mx-auto lg:ml-4 lg:mr-0 font-sans font-normal text-center lg:text-left text-gray-700">
                                     <ul className="list-disc space-y-2">
