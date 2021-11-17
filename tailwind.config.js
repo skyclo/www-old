@@ -14,7 +14,6 @@ const tailwind_config = {
   theme: {
     fontFamily: {
       'sans': ['Gilroy','ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe\\ UI"', 'Roboto', '"Helvetica\\ Neue"', 'Arial', '"Noto\\ Sans"', 'sans-serif', '"Apple\\ Color\\ Emoji"', '"Segoe\\ UI\\ Emoji"', '"Segoe\\ UI\\ Symbol"', '"Noto\\ Color\\ Emoji"'],
-      'serif': ['Georgia', 'Cambria', '"Times\\ New\\ Roman"', 'Times', 'serif'],
       'mono': ['Cascadia Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation\ Mono"', '"Courier\ New"', 'monospace']
     },
     extend: {
@@ -27,8 +26,12 @@ const tailwind_config = {
       },
       colors: {
         gray: colors.coolGray,
-        orange: colors.orange,
-        cyan: colors.cyan,
+        orange: {
+          400: colors.orange[400]
+        },
+        cyan: {
+          400: colors.cyan[400]
+        },
       },
       zIndex: {
         '-1': '-1',
