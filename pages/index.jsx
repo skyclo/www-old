@@ -18,22 +18,11 @@ export default function Home() {
         }
     }, [])
 
-    if (splashVisible) return (
-        <>
-            <HeadMetadata pageTitle="Home"/>
-            <body className="container-full-screen bg-dark">
-                <Splash/>
-                <DevBanner/>
-                <Navbar/>
-                <IndexPageHero/>
-            </body>
-        </>
-    )
-
     return (
         <>
             <HeadMetadata pageTitle="Home"/>
             <body className="container-full-screen bg-dark">
+                {splashVisible? <Splash/> : null}
                 <DevBanner/>
                 <Navbar/>
                 <IndexPageHero/>
