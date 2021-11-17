@@ -3,26 +3,19 @@ const colors = require('tailwindcss/colors')
 const tailwind_config = {
   purge: {
     content: [
-      '../pages/**/*.jsx',
-      '../components/**/*.jsx'
+      './pages/**/*.jsx',
+      './components/**/*.jsx'
     ],
     options: {
-      safelist: [
-        // For headers
-        'from-green-400',
-        'to-cyan-400',
-        'from-purple-400',
-        'to-blue-400',
-        'from-orange-400',
-        'to-yellow-400'
-      ]
+      safelist: [/^(from||to)-[a-z0-9-]*/]
     }
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Gilroy','ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe\\ UI"', '"Helvetica\\ Neue"', 'Arial', 'sans-serif', '"Apple\\ Color\\ Emoji"', '"Segoe\\ UI\\ Emoji"', '"Segoe\\ UI\\ Symbol"', '"Noto\\ Color\\ Emoji"'],
-      'mono': ['Cascadia Mono', 'ui-monospace', 'Consolas', '"Courier\ New"', 'monospace']
+      'sans': ['Gilroy','ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe\\ UI"', 'Roboto', '"Helvetica\\ Neue"', 'Arial', '"Noto\\ Sans"', 'sans-serif', '"Apple\\ Color\\ Emoji"', '"Segoe\\ UI\\ Emoji"', '"Segoe\\ UI\\ Symbol"', '"Noto\\ Color\\ Emoji"'],
+      'serif': ['Georgia', 'Cambria', '"Times\\ New\\ Roman"', 'Times', 'serif'],
+      'mono': ['Cascadia Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation\ Mono"', '"Courier\ New"', 'monospace']
     },
     extend: {
       fontSize: {
@@ -34,12 +27,8 @@ const tailwind_config = {
       },
       colors: {
         gray: colors.coolGray,
-        orange: {
-          '400': colors.orange['400'],
-        },
-        cyan: {
-          '400': colors.cyan['400'],
-        },
+        orange: colors.orange,
+        cyan: colors.cyan,
       },
       zIndex: {
         '-1': '-1',
