@@ -1,15 +1,25 @@
+import dynamic from 'next/dynamic'
 import HeadMetadata from './../components/HeadMetadata'
 import Navbar from './../components/navbar/Navbar'
 import HeaderLarge from './../components/HeaderLarge'
-import ProjectCarousel from './../components/showcase_page/projects_section/ProjectCarousel'
-import ProjectCarouselSlideIdeoxan from './../components/showcase_page/projects_section/ProjectCarouselSlideIdeoxan'
-import ProjectCarouselSlideSerenade from './../components/showcase_page/projects_section/ProjectCarouselSlideSerenade'
-import ProjectCarouselSlideSCDL from './../components/showcase_page/projects_section/ProjectCarouselSlideSCDL'
-import ProjectCarouselSlideSkosh from './../components/showcase_page/projects_section/ProjectCarouselSlideSkosh'
 import CallToAction from './../components/CallToAction'
-import Footer from './../components/Footer'
-import ArtSection from './../components/showcase_page/art_section/Art'
 import DevBanner from '../components/DevBanner'
+
+const ProjectCarousel = dynamic(() => import('../components/showcase_page/projects_section/ProjectCarousel'))
+const ProjectCarouselSlideIdeoxan = dynamic(() =>
+    import('../components/showcase_page/projects_section/ProjectCarouselSlideIdeoxan')
+)
+const ProjectCarouselSlideSerenade = dynamic(() =>
+    import('../components/showcase_page/projects_section/ProjectCarouselSlideSerenade')
+)
+const ProjectCarouselSlideSCDL = dynamic(() =>
+    import('../components/showcase_page/projects_section/ProjectCarouselSlideSCDL')
+)
+const ProjectCarouselSlideSkosh = dynamic(() =>
+    import('../components/showcase_page/projects_section/ProjectCarouselSlideSkosh')
+)
+const ArtSection = dynamic(() => import('../components/showcase_page/art_section/Art'))
+const Footer = dynamic(() => import('../components/Footer'))
 
 export default function Showcase() {
     let projectsData = [

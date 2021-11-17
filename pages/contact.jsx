@@ -1,10 +1,12 @@
+import dynamic from 'next/dynamic'
 import Navbar from './../components/navbar/Navbar'
 import HeadMetadata from './../components/HeadMetadata'
 import HeaderLarge from './../components/HeaderLarge'
 import LinkCardThin from './../components/LinkCardThin'
 import CallToAction from './../components/CallToAction'
-import Footer from './../components/Footer'
 import DevBanner from '../components/DevBanner'
+
+const Footer = dynamic(() => import('../components/Footer'))
 
 export default function Contact() {
     let data = [
